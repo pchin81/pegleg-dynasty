@@ -1,0 +1,1005 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Pegleg Dynasty — league history, rosters with keeper prices, live standings, and the league constitution.">
+<meta name="theme-color" content="#0c1f3a">
+<meta property="og:title" content="Pegleg Dynasty">
+<meta property="og:description" content="League history, rosters with keeper prices, live standings, and the constitution.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏴‍☠️</text></svg>">
+<style>
+  html { color-scheme: light dark; }
+  body { margin: 0; }
+  img { max-width: 100%; }
+  [hidden] { display: none !important; }
+</style>
+<parameter name="content"><title>Pegleg Dynasty</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy-950:#081426;
+    --navy-900:#0c1f3a;
+    --navy-800:#123058;
+    --navy-700:#1a4278;
+    --navy-600:#28588f;
+    --crimson-700:#8f1c22;
+    --crimson-600:#a9232a;
+    --crimson-500:#c22c30;
+    --gold-500:#c9a15a;
+    --ink:#151a22;
+    --ink-soft:#3b4452;
+    --parchment-50:#faf7ef;
+    --parchment-100:#f3ecdb;
+    --parchment-200:#e8dcc0;
+    --rule:#d8cba6;
+    --bg:var(--parchment-50);
+    --surface:#ffffff;
+    --surface-2:var(--parchment-100);
+    --text:var(--ink);
+    --text-soft:var(--ink-soft);
+    --text-muted:#6b6255;
+    --accent:var(--navy-800);
+    --accent-strong:var(--navy-900);
+    --danger:var(--crimson-600);
+    --border:var(--rule);
+    --shadow:0 1px 2px rgba(20,20,10,.06), 0 8px 24px -12px rgba(20,20,10,.18);
+    --champion:#a9232a;
+    color-scheme:light;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#0a0f18;
+      --surface:#101827;
+      --surface-2:#141f31;
+      --text:#eee6d3;
+      --text-soft:#c9c0ab;
+      --text-muted:#8b9099;
+      --accent:#5f8fc7;
+      --accent-strong:#7fa8db;
+      --border:#25324a;
+      --danger:#e0636a;
+      --champion:#e0636a;
+      --gold-500:#d8b876;
+      --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 28px -12px rgba(0,0,0,.6);
+      color-scheme:dark;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#0a0f18;
+    --surface:#101827;
+    --surface-2:#141f31;
+    --text:#eee6d3;
+    --text-soft:#c9c0ab;
+    --text-muted:#8b9099;
+    --accent:#5f8fc7;
+    --accent-strong:#7fa8db;
+    --border:#25324a;
+    --danger:#e0636a;
+    --champion:#e0636a;
+    --gold-500:#d8b876;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 28px -12px rgba(0,0,0,.6);
+    color-scheme:dark;
+  }
+
+  *{box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--text);
+    font-family:'Source Serif 4', Georgia, 'Times New Roman', serif;
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+  }
+  ::selection{background:var(--gold-500); color:var(--navy-950);}
+  a{color:var(--accent-strong);}
+  h1,h2,h3,h4{
+    font-family:'Cinzel', Georgia, serif;
+    letter-spacing:.01em;
+    text-wrap:balance;
+    color:var(--text);
+    margin:0 0 .4em;
+  }
+  .num, table td.num, .tabular{font-variant-numeric:tabular-nums; font-family:'Inter', system-ui, sans-serif;}
+  .ui{font-family:'Inter', system-ui, sans-serif;}
+
+  a:focus-visible, button:focus-visible, [tabindex]:focus-visible{
+    outline:2px solid var(--accent-strong);
+    outline-offset:2px;
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    *{animation-duration:0.001ms !important; transition-duration:0.001ms !important;}
+  }
+
+  /* ---------- Shell ---------- */
+  .shell{max-width:1180px; margin:0 auto; padding:0 20px 80px;}
+
+  header.masthead{
+    background:
+      radial-gradient(1200px 260px at 15% -40%, var(--navy-700) 0%, transparent 60%),
+      linear-gradient(180deg, var(--navy-900), var(--navy-950));
+    color:var(--parchment-50);
+    border-bottom:3px solid var(--gold-500);
+    padding:28px 20px 0;
+  }
+  .masthead-inner{max-width:1180px; margin:0 auto;}
+  .brand-row{
+    display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap;
+    padding-bottom:18px;
+  }
+  .brand{display:flex; align-items:center; gap:14px;}
+  .brand-mark{
+    font-size:2.1rem; line-height:1;
+    filter:drop-shadow(0 2px 3px rgba(0,0,0,.4));
+  }
+  .brand-text h1{
+    font-size:clamp(1.5rem, 1.1rem + 1.6vw, 2.35rem);
+    margin:0; color:#f7f1e0;
+    letter-spacing:.03em;
+  }
+  .brand-text .tagline{
+    font-family:'Inter', system-ui, sans-serif;
+    font-size:.72rem;
+    letter-spacing:.16em;
+    text-transform:uppercase;
+    color:var(--gold-500);
+    margin-top:2px;
+  }
+  .season-pill{
+    font-family:'Inter', system-ui, sans-serif;
+    font-size:.78rem;
+    color:#e9dfc4;
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.18);
+    padding:6px 12px;
+    border-radius:999px;
+    white-space:nowrap;
+  }
+  .pill-group{display:flex; align-items:center; gap:8px; flex-wrap:wrap;}
+  button.status-pill{
+    font-family:'Inter', system-ui, sans-serif;
+    font-size:.74rem;
+    color:#e9dfc4;
+    background:rgba(255,255,255,.06);
+    border:1px solid rgba(255,255,255,.16);
+    padding:6px 12px;
+    border-radius:999px;
+    white-space:nowrap;
+    cursor:pointer;
+    display:inline-flex;
+    align-items:center;
+    gap:7px;
+  }
+  button.status-pill:hover{background:rgba(255,255,255,.13);}
+  .status-dot{
+    width:7px; height:7px; border-radius:50%;
+    background:#8b9099; flex:none;
+  }
+  .status-pill[data-state="live"] .status-dot{background:#4ade80; box-shadow:0 0 0 3px rgba(74,222,128,.18);}
+  .status-pill[data-state="loading"] .status-dot{background:var(--gold-500); animation:pulse 1.1s ease-in-out infinite;}
+  .status-pill[data-state="offline"] .status-dot{background:#e0636a;}
+  @keyframes pulse{0%,100%{opacity:1;} 50%{opacity:.35;}}
+  @media (prefers-reduced-motion: reduce){ .status-pill[data-state="loading"] .status-dot{animation:none;} }
+
+  tr.cutline td{
+    padding:0; border-bottom:none;
+  }
+  tr.cutline .cut-inner{
+    display:flex; align-items:center; gap:10px;
+    padding:7px 10px;
+    font-family:'Inter',sans-serif; font-size:.66rem; letter-spacing:.1em; text-transform:uppercase;
+    color:var(--text-muted); font-weight:600;
+  }
+  tr.cutline .cut-inner::before, tr.cutline .cut-inner::after{
+    content:""; height:1px; background:var(--border); flex:1;
+  }
+  .fa-chip{
+    font-family:'Inter',sans-serif; font-size:.6rem; font-weight:700; letter-spacing:.06em;
+    color:var(--text-muted); border:1px solid var(--border);
+    padding:2px 6px; border-radius:4px; text-transform:uppercase;
+  }
+  nav.tabs{
+    display:flex; gap:4px; flex-wrap:wrap;
+    border-bottom:none;
+  }
+  nav.tabs button{
+    font-family:'Inter', system-ui, sans-serif;
+    font-size:.86rem;
+    font-weight:600;
+    letter-spacing:.02em;
+    background:transparent;
+    border:none;
+    color:#cdd8e6;
+    padding:12px 18px;
+    cursor:pointer;
+    border-radius:8px 8px 0 0;
+    position:relative;
+    top:1px;
+  }
+  nav.tabs button .ico{margin-right:7px;}
+  nav.tabs button[aria-selected="true"]{
+    background:var(--bg);
+    color:var(--navy-900);
+  }
+  :root[data-theme="dark"] nav.tabs button[aria-selected="true"],
+  @media (prefers-color-scheme: dark){}
+  nav.tabs button[aria-selected="true"]{
+    background:var(--bg);
+    color:var(--accent-strong);
+  }
+  nav.tabs button:hover:not([aria-selected="true"]){
+    color:#fff;
+    background:rgba(255,255,255,.07);
+  }
+
+  main{padding-top:34px;}
+  .panel{display:none;}
+  .panel.active{display:block; animation:fadeIn .25s ease;}
+  @keyframes fadeIn{from{opacity:0; transform:translateY(4px);} to{opacity:1; transform:none;}}
+  @media (prefers-reduced-motion: reduce){ .panel.active{animation:none;} }
+
+  section.block{margin-bottom:44px;}
+  .eyebrow{
+    font-family:'Inter', system-ui, sans-serif;
+    font-size:.72rem;
+    letter-spacing:.16em;
+    text-transform:uppercase;
+    color:var(--accent-strong);
+    font-weight:600;
+    margin-bottom:6px;
+  }
+  .block > h2{font-size:1.6rem; margin-bottom:.15em;}
+  .block > p.lede{color:var(--text-soft); max-width:62ch; margin:0 0 22px;}
+
+  /* ---------- Cards / general ---------- */
+  .card{
+    background:var(--surface);
+    border:1px solid var(--border);
+    border-radius:10px;
+    box-shadow:var(--shadow);
+  }
+
+  /* ---------- History: champion timeline ---------- */
+  .champ-row{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(210px,1fr));
+    gap:14px;
+    margin-bottom:8px;
+  }
+  .champ-card{
+    padding:18px 18px 16px;
+    position:relative;
+    overflow:hidden;
+  }
+  .champ-card::before{
+    content:"";
+    position:absolute; inset:0 0 auto 0; height:4px;
+    background:linear-gradient(90deg, var(--gold-500), var(--champion));
+  }
+  .champ-year{
+    font-family:'Inter',sans-serif; font-size:.72rem; letter-spacing:.14em;
+    text-transform:uppercase; color:var(--text-muted); font-weight:600;
+  }
+  .champ-trophy{font-size:1.3rem; margin:6px 0 2px;}
+  .champ-team{font-family:'Cinzel',serif; font-size:1.12rem; margin:2px 0 2px; color:var(--text);}
+  .champ-manager{font-family:'Inter',sans-serif; font-size:.82rem; color:var(--text-muted);}
+  .champ-record{font-family:'Inter',sans-serif; font-size:.78rem; color:var(--text-soft); margin-top:8px; font-variant-numeric:tabular-nums;}
+
+  /* records grid */
+  .records-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(230px,1fr));
+    gap:12px;
+  }
+  .record-card{padding:16px 18px;}
+  .record-label{font-family:'Inter',sans-serif; font-size:.7rem; letter-spacing:.1em; text-transform:uppercase; color:var(--text-muted); font-weight:600;}
+  .record-value{font-family:'Inter',sans-serif; font-size:1.3rem; font-weight:700; color:var(--accent-strong); margin:4px 0 2px; font-variant-numeric:tabular-nums;}
+  .record-who{font-size:.86rem; color:var(--text-soft);}
+
+  /* season accordions */
+  .season-block{margin-bottom:14px; overflow:hidden;}
+  .season-head{
+    display:flex; align-items:center; justify-content:space-between;
+    width:100%; background:none; border:none; cursor:pointer;
+    padding:16px 20px; text-align:left; font-family:'Cinzel',serif; font-size:1.05rem;
+    color:var(--text);
+  }
+  .season-head .chev{
+    font-family:'Inter',sans-serif; color:var(--text-muted); transition:transform .18s ease;
+    font-size:.9rem;
+  }
+  .season-head[aria-expanded="true"] .chev{transform:rotate(90deg);}
+  .season-body{padding:0 20px 18px; display:none;}
+  .season-body.open{display:block;}
+
+  table{width:100%; border-collapse:collapse; font-family:'Inter',sans-serif; font-size:.86rem;}
+  table th{
+    text-align:left; font-weight:600; font-size:.7rem; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--text-muted); border-bottom:1px solid var(--border); padding:8px 10px;
+  }
+  table td{padding:9px 10px; border-bottom:1px solid var(--border); color:var(--text-soft);}
+  table tr:last-child td{border-bottom:none;}
+  table td.num, table th.num{text-align:right; font-variant-numeric:tabular-nums;}
+  .table-wrap{overflow-x:auto;}
+  tr.is-champ td{color:var(--text); font-weight:600;}
+  tr.is-champ td.rankcell::after{content:" 🏆"; }
+
+  /* ---------- Rosters ---------- */
+  .roster-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(300px,1fr));
+    gap:16px;
+  }
+  .roster-card{overflow:hidden;}
+  .roster-card-head{
+    background:linear-gradient(135deg, var(--navy-900), var(--navy-800));
+    color:#f3ecdb;
+    padding:14px 18px;
+  }
+  .roster-card-head h3{color:#fbf6e8; font-size:1.05rem; margin:0;}
+  .roster-card-head .mgr{font-family:'Inter',sans-serif; font-size:.76rem; color:#c9d3e0; margin-top:2px;}
+  .roster-card-head .spend{
+    font-family:'Inter',sans-serif; font-size:.72rem; color:var(--gold-500); margin-top:6px; font-variant-numeric:tabular-nums;
+  }
+  .roster-list{list-style:none; margin:0; padding:6px 0;}
+  .roster-list li{
+    display:flex; align-items:center; gap:10px;
+    padding:8px 18px;
+    border-bottom:1px solid var(--border);
+    font-family:'Inter',sans-serif; font-size:.84rem;
+  }
+  .roster-list li:last-child{border-bottom:none;}
+  .pos-chip{
+    font-size:.62rem; font-weight:700; letter-spacing:.03em;
+    padding:2px 6px; border-radius:4px;
+    background:var(--surface-2); color:var(--text-soft);
+    min-width:2.4em; text-align:center;
+  }
+  .p-name{flex:1; color:var(--text); min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+  .p-team{color:var(--text-muted); font-size:.74rem;}
+  .p-price{
+    font-variant-numeric:tabular-nums; font-weight:600; color:var(--text-soft);
+    min-width:2.6em; text-align:right;
+  }
+  li.is-keeper{background:color-mix(in srgb, var(--gold-500) 14%, transparent);}
+  li.is-keeper .p-price{color:var(--champion); font-weight:700;}
+  .keeper-badge{
+    font-family:'Inter',sans-serif; font-size:.6rem; font-weight:700; letter-spacing:.06em;
+    color:var(--navy-950); background:var(--gold-500);
+    padding:2px 6px; border-radius:4px; text-transform:uppercase;
+  }
+
+  /* ---------- Standings ---------- */
+  .standings-note{
+    font-family:'Inter',sans-serif; font-size:.84rem; color:var(--text-muted);
+    background:var(--surface-2); border:1px solid var(--border); border-radius:8px;
+    padding:10px 14px; margin-bottom:18px;
+  }
+
+  /* ---------- Constitution ---------- */
+  .con-layout{display:grid; grid-template-columns:220px 1fr; gap:36px; align-items:start;}
+  @media (max-width:780px){ .con-layout{grid-template-columns:1fr;} }
+  .con-nav{position:sticky; top:16px;}
+  .con-nav a{
+    display:block; font-family:'Inter',sans-serif; font-size:.82rem; color:var(--text-soft);
+    padding:6px 0; text-decoration:none; border-left:2px solid transparent; padding-left:12px;
+  }
+  .con-nav a:hover{color:var(--accent-strong); border-left-color:var(--accent);}
+  .con-body h3{font-size:1.2rem; margin-top:1.6em; scroll-margin-top:16px;}
+  .con-body h4{font-size:1rem; font-family:'Inter',sans-serif; text-transform:uppercase; letter-spacing:.04em; color:var(--text-soft); margin-top:1.4em;}
+  .con-body p, .con-body li{color:var(--text-soft);}
+  .con-body ol, .con-body ul{padding-left:1.3em;}
+  .con-updated{font-family:'Inter',sans-serif; font-size:.78rem; color:var(--text-muted); margin-bottom:1.4em;}
+  .fee-box{
+    display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:10px;
+    margin:18px 0 26px;
+  }
+  .fee-box .card{padding:12px 14px;}
+  .fee-box .k{font-family:'Inter',sans-serif; font-size:.68rem; text-transform:uppercase; letter-spacing:.08em; color:var(--text-muted);}
+  .fee-box .v{font-family:'Inter',sans-serif; font-weight:700; color:var(--accent-strong); font-size:1.05rem;}
+  .k-tax-table td:first-child{font-weight:600; color:var(--text);}
+  .source-note{font-family:'Inter',sans-serif; font-size:.76rem; color:var(--text-muted); margin-top:1.5em; padding-top:1em; border-top:1px dashed var(--border);}
+
+  footer{
+    text-align:center; padding:34px 20px 60px;
+    font-family:'Inter',sans-serif; font-size:.76rem; color:var(--text-muted);
+  }
+</style>
+</head>
+<body>
+<div id="app">
+<header class="masthead">
+  <div class="masthead-inner">
+    <div class="brand-row">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true">🏴‍☠️</span>
+        <div class="brand-text">
+          <h1>Pegleg Dynasty</h1>
+          <div class="tagline">Est. 2022 &middot; 12-Team Dynasty Auction League</div>
+        </div>
+      </div>
+      <div class="pill-group">
+        <div class="season-pill ui" id="seasonPill">2026 Season</div>
+        <button type="button" class="status-pill" id="statusPill" data-state="loading" title="Refresh from Sleeper">
+          <span class="status-dot" aria-hidden="true"></span><span id="statusText">Checking Sleeper…</span>
+        </button>
+      </div>
+    </div>
+    <nav class="tabs" id="tabs" role="tablist" aria-label="Site sections">
+      <button role="tab" data-tab="history" aria-selected="true"><span class="ico">🏆</span>History</button>
+      <button role="tab" data-tab="rosters" aria-selected="false"><span class="ico">📜</span>Rosters</button>
+      <button role="tab" data-tab="standings" aria-selected="false"><span class="ico">📊</span>Standings</button>
+      <button role="tab" data-tab="constitution" aria-selected="false"><span class="ico">⚖️</span>Constitution</button>
+    </nav>
+  </div>
+</header>
+
+<main class="shell">
+
+  <section id="panel-history" class="panel active" role="tabpanel"></section>
+  <section id="panel-rosters" class="panel" role="tabpanel"></section>
+  <section id="panel-standings" class="panel" role="tabpanel"></section>
+  <section id="panel-constitution" class="panel" role="tabpanel"><div class="block con-layout">
+  <nav class="con-nav" aria-label="Constitution sections">
+    <a href="#fees">Entry Fees &amp; Prizes</a>
+    <a href="#inseason">In-Season Rules</a>
+    <a href="#playoffs">Playoff Rules</a>
+    <a href="#offseason">Off-Season &amp; Keepers</a>
+  </nav>
+  <div class="con-body">
+    <div class="eyebrow">The Founding Document</div>
+    <h2>Pegleg Dynasty Constitution</h2>
+    <div class="con-updated">Last updated 6/13/24 &middot; sourced from the league's official governing document</div>
+
+    <h3 id="fees">Entry Fees, Prizes &amp; Consequences</h3>
+    <div class="fee-box">
+      <div class="card"><div class="k">Entry Fee</div><div class="v">$150 / team</div></div>
+      <div class="card"><div class="k">Co-managers pay</div><div class="v">$75 each</div></div>
+      <div class="card"><div class="k">Total Prize Pool</div><div class="v">$1,800</div></div>
+      <div class="card"><div class="k">Champion Takes</div><div class="v">$900</div></div>
+    </div>
+    <ul>
+      <li>Each team pays a $150 entry fee (co-managers pay $75 each) to the League Dues Czars, Manan and Andrew, before the draft.</li>
+      <li>The $1,800 prize pool splits between the winning team ($900) and a charitable donation to the AFSP in honor of Chris and Tahmeed.</li>
+      <li>The team with the worst regular-season record owns a half share of the <strong>Biggest Loser Consequence</strong> &mdash; hosting the in-person draft party.</li>
+      <li>The team that loses the Will McKay Toilet Bowl Bracket owns the other half share of the Biggest Loser Consequence.</li>
+      <li>One team can own both shares (worst regular-season record <em>and</em> Toilet Bowl loser).</li>
+    </ul>
+
+    <h3 id="inseason">In-Season Roster &amp; Transaction Rules</h3>
+    <ol>
+      <li>There are 12 teams in the Pegleg Dynasty. Teams may have a single manager or a pair of co-managers.</li>
+      <li>Each roster fields: QB, RB, WR, TE, WR/RB/TE, WR/RB, WR/TE, QB/WR/RB/TE, DEF, 5 bench slots, and 3 IR slots.</li>
+      <li>Players marked "Out" or "COVID-19" may be placed on IR.</li>
+      <li>Teams have a $100 FAAB budget for the season. All waiver bids are due before Wednesdays at 12pm ET; once waivers clear, any player not bid on becomes a free agent until their game that week begins.</li>
+      <li>A dropped player stays on waivers for 1 day so every team can bid. Once cleared, an unbid player can be added as a free agent at no FAAB cost.</li>
+      <li>Trades of players and/or future draft dollars are allowed through the end of Week 11. The Commissioner logs any trade involving future draft dollars. All trades are allowed &mdash; there are no trade vetoes.</li>
+    </ol>
+
+    <h3 id="playoffs">Playoff Rules</h3>
+    <ol>
+      <li>The <strong>Tamiki Cup</strong> playoffs run Weeks 15&ndash;17. The <strong>Will McKay Biggest Loser Bracket</strong> runs Weeks 15&ndash;16 only.</li>
+      <li>The top 8 regular-season teams make the Tamiki Cup; the bottom 4 play in the Will McKay Toilet Bowl.</li>
+      <li>The top 3 seeds pick their first-round opponent from seeds 5&ndash;8, in order of regular-season finish (1st seed picks first, then 2nd, then 3rd); the 4th seed faces whoever remains.
+        <ul>
+          <li>1st seed must pick by Wednesday of Week 15, 4:00pm.</li>
+          <li>2nd seed must pick by 5:00pm.</li>
+          <li>3rd seed must pick by 6:00pm.</li>
+        </ul>
+      </li>
+      <li>Only "live" teams may add/drop during the playoffs. Once eliminated from either the Tamiki Cup or the Toilet Bowl, a roster locks and can no longer add or drop players.</li>
+    </ol>
+
+    <h3 id="offseason">Off-Season Roster &amp; Transaction Rules</h3>
+    <p>Each team may keep a maximum of <strong>two</strong> players from the previous season's final roster. Anything not kept re-enters the draft. There are two kinds of keepers:</p>
+
+    <h4>Unrestricted Keepers</h4>
+    <p>A player drafted in the previous season's draft, or kept previously by the same manager, can be kept with a tax added on top of last year's draft value:</p>
+    <div class="table-wrap">
+      <table class="k-tax-table">
+        <thead><tr><th>Keeper Year</th><th class="num">Tax Added to Prior Value</th></tr></thead>
+        <tbody>
+          <tr><td>K1 &mdash; first year kept</td><td class="num">+$5</td></tr>
+          <tr><td>K2 &mdash; second year kept</td><td class="num">+$10</td></tr>
+          <tr><td>K3 &mdash; third year kept</td><td class="num">+$20</td></tr>
+          <tr><td>K4 &mdash; fourth year kept</td><td class="num">+$40</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>No player can be kept beyond four years.</p>
+
+    <h4>Restricted Keepers</h4>
+    <p>A player <em>not</em> drafted in the previous season (no prior draft-dollar value) must go into the auction at the start of the next draft. The manager holding restricted rights may match the highest bid to keep the player, or pass on the player to the new high bidder. That manager does not get to name a replacement keeper mid-draft if they lose the bidding.</p>
+
+    <h4>Allowed Keeper Combinations</h4>
+    <ul>
+      <li>2 unrestricted keepers</li>
+      <li>2 restricted keepers</li>
+      <li>1 unrestricted + 1 restricted keeper</li>
+      <li>1 unrestricted keeper only</li>
+      <li>1 restricted keeper only</li>
+      <li>0 keepers</li>
+    </ul>
+
+    <h4>Trading Keeper Rights &amp; Draft Dollars</h4>
+    <p>Teams may freely trade keeper rights and draft dollars in the off-season, with these limits:</p>
+    <ul>
+      <li>No team may hold more than two keepers (unrestricted and/or restricted) entering the draft.</li>
+      <li>No team may enter the draft with more than $225.</li>
+      <li>No team may enter the draft with less than $175.</li>
+      <li>The Commissioner tracks any trade that involves draft dollars.</li>
+    </ul>
+
+    <p class="source-note">This page mirrors the official Pegleg Dynasty Constitution Google Doc. If the two ever disagree, the Google Doc is the source of truth &mdash; ping the commissioner to sync an update here.</p>
+  </div>
+</div>
+</section>
+
+</main>
+
+<footer>
+  Built from live Sleeper league data &middot; League ID 1386214052966973440 &middot; Last refreshed Sep 19, 2026 20:45 UTC
+</footer>
+</div>
+
+<script>
+const DATA = {"league_name": "Pegleg Dynasty", "current_season": 2026, "sleeper_league_id": "1386214052966973440", "teams_2026": {"1": {"team_name": "Mendes' Eyebrow", "manager": "pchin81", "co_manager": "nickox"}, "2": {"team_name": "Warren World All-Stars", "manager": "dolesh2", "co_manager": null}, "3": {"team_name": "Settlers of Cottan", "manager": "rhlee13", "co_manager": "dhuang1"}, "4": {"team_name": "Ridley me this", "manager": "RoofKorean", "co_manager": null}, "5": {"team_name": "The Bushwackers", "manager": "andrewhwang07", "co_manager": null}, "6": {"team_name": "Gibbs + Perplexity", "manager": "Dougisme", "co_manager": null}, "7": {"team_name": "Njigbas in Paris", "manager": "eduke87", "co_manager": null}, "8": {"team_name": "FreeManan", "manager": "ChickenFriedFantasy", "co_manager": "ChokeNoJoke"}, "9": {"team_name": "KL2 Aspire", "manager": "jmelgares", "co_manager": null}, "10": {"team_name": "JD and Coke", "manager": "axesup", "co_manager": "SofaKingdum"}, "11": {"team_name": "Matta's Lolita Express", "manager": "Wdanders888", "co_manager": "jfishner"}, "12": {"team_name": "TheNYFootballTeam", "manager": "TheNYFootballTeam", "co_manager": null}}, "champions": {"2022": 1, "2023": 8, "2024": 6, "2025": 3}, "champ_counts": {"1": 1, "8": 1, "6": 1, "3": 1}, "history": {"2022": [{"roster_id": 2, "wins": 11, "losses": 3, "ties": 0, "fpts": 2046.18, "fpts_against": 1698.28, "ppts": 2156.42, "team_name": "Loose Deuce Mcalister", "manager": "dolesh2", "is_champion": false, "rank": 1}, {"roster_id": 11, "wins": 11, "losses": 3, "ties": 0, "fpts": 1780.66, "fpts_against": 1627.04, "ppts": 1901.98, "team_name": "Ridley Parlay", "manager": "Wdanders888", "is_champion": false, "rank": 2}, {"roster_id": 5, "wins": 9, "losses": 5, "ties": 0, "fpts": 1936.24, "fpts_against": 1747.0, "ppts": 2080.44, "team_name": "Deshaun's Moist Towel", "manager": "andrewhwang07", "is_champion": false, "rank": 3}, {"roster_id": 6, "wins": 7, "losses": 7, "ties": 0, "fpts": 1856.14, "fpts_against": 1659.18, "ppts": 1959.26, "team_name": "MoistSleeper", "manager": "Dougisme", "is_champion": false, "rank": 4}, {"roster_id": 9, "wins": 7, "losses": 7, "ties": 0, "fpts": 1769.8, "fpts_against": 1733.66, "ppts": 1865.1, "team_name": "jmelgares", "manager": "jmelgares", "is_champion": false, "rank": 5}, {"roster_id": 1, "wins": 7, "losses": 7, "ties": 0, "fpts": 1735.02, "fpts_against": 1734.82, "ppts": 1908.99, "team_name": "The Mendes Hell Ride", "manager": "pchin81", "is_champion": true, "rank": 6}, {"roster_id": 8, "wins": 6, "losses": 8, "ties": 0, "fpts": 1760.24, "fpts_against": 1664.5, "ppts": 1935.58, "team_name": "FreeManan", "manager": "ChickenFriedFantasy", "is_champion": false, "rank": 7}, {"roster_id": 10, "wins": 6, "losses": 8, "ties": 0, "fpts": 1696.76, "fpts_against": 1729.68, "ppts": 1817.62, "team_name": "Poop Kupp", "manager": "axesup", "is_champion": false, "rank": 8}, {"roster_id": 12, "wins": 6, "losses": 8, "ties": 0, "fpts": 1596.42, "fpts_against": 1721.52, "ppts": 1730.94, "team_name": "TheNYFootballTeam", "manager": "TheNYFootballTeam", "is_champion": false, "rank": 9}, {"roster_id": 4, "wins": 6, "losses": 8, "ties": 0, "fpts": 1580.38, "fpts_against": 1726.66, "ppts": 1778.02, "team_name": "RoofKorean", "manager": "RoofKorean", "is_champion": false, "rank": 10}, {"roster_id": 3, "wins": 5, "losses": 9, "ties": 0, "fpts": 1345.64, "fpts_against": 1702.3, "ppts": 1483.74, "team_name": "That 70's Show", "manager": "rhlee13", "is_champion": false, "rank": 11}, {"roster_id": 7, "wins": 3, "losses": 11, "ties": 0, "fpts": 1431.34, "fpts_against": 1790.18, "ppts": 1604.06, "team_name": "Unorthodox JuJu's", "manager": "eduke87", "is_champion": false, "rank": 12}], "2023": [{"roster_id": 5, "wins": 9, "losses": 5, "ties": 0, "fpts": 1907.04, "fpts_against": 1751.24, "ppts": 2048.84, "team_name": "Cheap Grundle Licks", "manager": "andrewhwang07", "is_champion": false, "rank": 1}, {"roster_id": 7, "wins": 9, "losses": 5, "ties": 0, "fpts": 1869.44, "fpts_against": 1599.56, "ppts": 1993.22, "team_name": "Kamara is Sus", "manager": "eduke87", "is_champion": false, "rank": 2}, {"roster_id": 2, "wins": 9, "losses": 5, "ties": 0, "fpts": 1663.12, "fpts_against": 1614.4, "ppts": 1873.26, "team_name": "Big Blue", "manager": "dolesh2", "is_champion": false, "rank": 3}, {"roster_id": 11, "wins": 8, "losses": 6, "ties": 0, "fpts": 1916.86, "fpts_against": 1901.7, "ppts": 2118.42, "team_name": "Fisnhersen", "manager": "Wdanders888", "is_champion": false, "rank": 4}, {"roster_id": 8, "wins": 8, "losses": 6, "ties": 0, "fpts": 1787.98, "fpts_against": 1676.26, "ppts": 1963.22, "team_name": "FreeManan", "manager": "ChickenFriedFantasy", "is_champion": true, "rank": 5}, {"roster_id": 10, "wins": 8, "losses": 6, "ties": 0, "fpts": 1697.64, "fpts_against": 1597.62, "ppts": 1827.99, "team_name": "Sergey is Best", "manager": "axesup", "is_champion": false, "rank": 6}, {"roster_id": 4, "wins": 7, "losses": 7, "ties": 0, "fpts": 1739.56, "fpts_against": 1641.64, "ppts": 1880.42, "team_name": "Cookin with Mahomies", "manager": "RoofKorean", "is_champion": false, "rank": 7}, {"roster_id": 6, "wins": 7, "losses": 7, "ties": 0, "fpts": 1700.46, "fpts_against": 1771.1, "ppts": 1899.52, "team_name": "Coochie Board Members", "manager": "Dougisme", "is_champion": false, "rank": 8}, {"roster_id": 3, "wins": 6, "losses": 8, "ties": 0, "fpts": 1640.62, "fpts_against": 1765.04, "ppts": 1827.7, "team_name": "Tickle my pickle", "manager": "rhlee13", "is_champion": false, "rank": 9}, {"roster_id": 9, "wins": 5, "losses": 9, "ties": 0, "fpts": 1657.9, "fpts_against": 1827.44, "ppts": 1843.0, "team_name": "jmelgares", "manager": "jmelgares", "is_champion": false, "rank": 10}, {"roster_id": 12, "wins": 4, "losses": 10, "ties": 0, "fpts": 1613.96, "fpts_against": 1795.02, "ppts": 1784.34, "team_name": "TheNYFootballTeam", "manager": "TheNYFootballTeam", "is_champion": false, "rank": 11}, {"roster_id": 1, "wins": 4, "losses": 10, "ties": 0, "fpts": 1596.22, "fpts_against": 1849.78, "ppts": 1693.5, "team_name": "Big Meat Three Peat", "manager": "pchin81", "is_champion": false, "rank": 12}], "2024": [{"roster_id": 12, "wins": 10, "losses": 4, "ties": 0, "fpts": 1782.84, "fpts_against": 1720.36, "ppts": 1998.6, "team_name": "TheNYFootballTeam", "manager": "TheNYFootballTeam", "is_champion": false, "rank": 1}, {"roster_id": 5, "wins": 9, "losses": 5, "ties": 0, "fpts": 1759.16, "fpts_against": 1634.1, "ppts": 1901.52, "team_name": "Breece Lightning", "manager": "andrewhwang07", "is_champion": false, "rank": 2}, {"roster_id": 11, "wins": 8, "losses": 6, "ties": 0, "fpts": 1788.84, "fpts_against": 1661.18, "ppts": 1926.1, "team_name": "Tiny Montanas (MDPD)", "manager": "Wdanders888", "is_champion": false, "rank": 3}, {"roster_id": 7, "wins": 8, "losses": 6, "ties": 0, "fpts": 1747.98, "fpts_against": 1829.06, "ppts": 1971.84, "team_name": "Kamara is Sus", "manager": "eduke87", "is_champion": false, "rank": 4}, {"roster_id": 1, "wins": 8, "losses": 6, "ties": 0, "fpts": 1715.26, "fpts_against": 1708.68, "ppts": 1880.14, "team_name": "The Ballshank Redemption", "manager": "pchin81", "is_champion": false, "rank": 5}, {"roster_id": 6, "wins": 7, "losses": 7, "ties": 0, "fpts": 1919.26, "fpts_against": 1700.08, "ppts": 2065.88, "team_name": "Make America Gato Again", "manager": "Dougisme", "is_champion": true, "rank": 6}, {"roster_id": 4, "wins": 7, "losses": 7, "ties": 0, "fpts": 1904.28, "fpts_against": 1806.94, "ppts": 2065.1, "team_name": "Thorough inerr Burrow", "manager": "RoofKorean", "is_champion": false, "rank": 7}, {"roster_id": 8, "wins": 7, "losses": 7, "ties": 0, "fpts": 1654.08, "fpts_against": 1823.82, "ppts": 1842.96, "team_name": "FreeManan", "manager": "ChickenFriedFantasy", "is_champion": false, "rank": 8}, {"roster_id": 3, "wins": 5, "losses": 9, "ties": 0, "fpts": 1730.68, "fpts_against": 1757.42, "ppts": 1907.96, "team_name": "Fresco's Tex Mex 🇨🇳", "manager": "rhlee13", "is_champion": false, "rank": 9}, {"roster_id": 9, "wins": 5, "losses": 9, "ties": 0, "fpts": 1714.92, "fpts_against": 1908.76, "ppts": 1805.22, "team_name": "jmelgares", "manager": "jmelgares", "is_champion": false, "rank": 10}, {"roster_id": 10, "wins": 5, "losses": 9, "ties": 0, "fpts": 1711.66, "fpts_against": 1704.74, "ppts": 1830.66, "team_name": "Future draft host", "manager": "axesup", "is_champion": false, "rank": 11}, {"roster_id": 2, "wins": 5, "losses": 9, "ties": 0, "fpts": 1451.54, "fpts_against": 1625.36, "ppts": 1666.86, "team_name": "NFC Central Champs", "manager": "dolesh2", "is_champion": false, "rank": 12}], "2025": [{"roster_id": 3, "wins": 10, "losses": 4, "ties": 0, "fpts": 1921.16, "fpts_against": 1578.84, "ppts": 2122.06, "team_name": "Ching Chong Champions", "manager": "rhlee13", "is_champion": true, "rank": 1}, {"roster_id": 7, "wins": 10, "losses": 4, "ties": 0, "fpts": 1755.06, "fpts_against": 1659.34, "ppts": 1922.18, "team_name": "Njigbas in Paris", "manager": "eduke87", "is_champion": false, "rank": 2}, {"roster_id": 6, "wins": 9, "losses": 5, "ties": 0, "fpts": 1874.58, "fpts_against": 1634.96, "ppts": 2014.5, "team_name": "Peasant", "manager": "Dougisme", "is_champion": false, "rank": 3}, {"roster_id": 4, "wins": 9, "losses": 5, "ties": 0, "fpts": 1769.7, "fpts_against": 1707.82, "ppts": 2023.34, "team_name": "Ridley me this", "manager": "RoofKorean", "is_champion": false, "rank": 4}, {"roster_id": 1, "wins": 8, "losses": 6, "ties": 0, "fpts": 1730.5, "fpts_against": 1739.3, "ppts": 1916.12, "team_name": "Mendes' Eyebrow", "manager": "pchin81", "is_champion": false, "rank": 5}, {"roster_id": 5, "wins": 7, "losses": 7, "ties": 0, "fpts": 1730.26, "fpts_against": 1691.66, "ppts": 1955.86, "team_name": "The Bushwackers", "manager": "andrewhwang07", "is_champion": false, "rank": 6}, {"roster_id": 12, "wins": 7, "losses": 7, "ties": 0, "fpts": 1644.98, "fpts_against": 1630.52, "ppts": 1715.94, "team_name": "TheNYFootballTeam", "manager": "TheNYFootballTeam", "is_champion": false, "rank": 7}, {"roster_id": 2, "wins": 7, "losses": 7, "ties": 0, "fpts": 1644.04, "fpts_against": 1558.28, "ppts": 1831.7, "team_name": "Warren World All-Stars", "manager": "dolesh2", "is_champion": false, "rank": 8}, {"roster_id": 8, "wins": 5, "losses": 9, "ties": 0, "fpts": 1562.4, "fpts_against": 1824.32, "ppts": 1787.96, "team_name": "FreeManan", "manager": "ChickenFriedFantasy", "is_champion": false, "rank": 9}, {"roster_id": 10, "wins": 4, "losses": 10, "ties": 0, "fpts": 1644.8, "fpts_against": 1780.62, "ppts": 1747.26, "team_name": "JD and Coke", "manager": "axesup", "is_champion": false, "rank": 10}, {"roster_id": 9, "wins": 4, "losses": 10, "ties": 0, "fpts": 1614.68, "fpts_against": 1859.54, "ppts": 1767.42, "team_name": "KL2 Aspire", "manager": "jmelgares", "is_champion": false, "rank": 11}, {"roster_id": 11, "wins": 4, "losses": 10, "ties": 0, "fpts": 1482.08, "fpts_against": 1708.76, "ppts": 1609.74, "team_name": "Matta's Lolita Express", "manager": "Wdanders888", "is_champion": false, "rank": 12}]}, "league_records": {"best_record": {"season": "2022", "team_name": "Loose Deuce Mcalister", "manager": "dolesh2", "wins": 11, "losses": 3, "fpts": 2046.18, "fpts_against": 1698.28, "ppts": 2156.42}, "worst_record": {"season": "2022", "team_name": "Unorthodox JuJu's", "manager": "eduke87", "wins": 3, "losses": 11, "fpts": 1431.34, "fpts_against": 1790.18, "ppts": 1604.06}, "most_points_scored": {"season": "2022", "team_name": "Loose Deuce Mcalister", "manager": "dolesh2", "wins": 11, "losses": 3, "fpts": 2046.18, "fpts_against": 1698.28, "ppts": 2156.42}, "fewest_points_scored": {"season": "2022", "team_name": "That 70's Show", "manager": "rhlee13", "wins": 5, "losses": 9, "fpts": 1345.64, "fpts_against": 1702.3, "ppts": 1483.74}, "most_points_allowed": {"season": "2024", "team_name": "jmelgares", "manager": "jmelgares", "wins": 5, "losses": 9, "fpts": 1714.92, "fpts_against": 1908.76, "ppts": 1805.22}, "best_point_diff": {"season": "2022", "team_name": "Loose Deuce Mcalister", "manager": "dolesh2", "wins": 11, "losses": 3, "fpts": 2046.18, "fpts_against": 1698.28, "ppts": 2156.42}, "worst_point_diff": {"season": "2022", "team_name": "Unorthodox JuJu's", "manager": "eduke87", "wins": 3, "losses": 11, "fpts": 1431.34, "fpts_against": 1790.18, "ppts": 1604.06}, "most_potential_points": {"season": "2022", "team_name": "Loose Deuce Mcalister", "manager": "dolesh2", "wins": 11, "losses": 3, "fpts": 2046.18, "fpts_against": 1698.28, "ppts": 2156.42}}, "rosters_2026": {"5": [{"player_id": "11564", "name": "Drake Maye", "position": "QB", "team": "NE", "amount": 16, "is_keeper": true, "round": 1, "pick_no": 1, "keeper_tier": "K2"}, {"player_id": "12508", "name": "Jaxson Dart", "position": "QB", "team": "NYG", "amount": 6, "is_keeper": true, "round": 1, "pick_no": 2, "keeper_tier": "K1"}, {"player_id": "7564", "name": "Ja'Marr Chase", "position": "WR", "team": "CIN", "amount": 61, "is_keeper": false, "round": 2, "pick_no": 23}, {"player_id": "8138", "name": "James Cook", "position": "RB", "team": "BUF", "amount": 42, "is_keeper": false, "round": 5, "pick_no": 52}, {"player_id": "12526", "name": "Tetairoa McMillan", "position": "WR", "team": "CAR", "amount": 25, "is_keeper": false, "round": 6, "pick_no": 70}, {"player_id": "11584", "name": "Bucky Irving", "position": "RB", "team": "TB", "amount": 20, "is_keeper": false, "round": 6, "pick_no": 71}, {"player_id": "13269", "name": "Fernando Mendoza", "position": "QB", "team": "LV", "amount": 10, "is_keeper": false, "round": 4, "pick_no": 38}, {"player_id": "12512", "name": "Quinshon Judkins", "position": "RB", "team": "CLE", "amount": 9, "is_keeper": false, "round": 8, "pick_no": 89}, {"player_id": "11631", "name": "Brian Thomas", "position": "WR", "team": "JAX", "amount": 4, "is_keeper": false, "round": 9, "pick_no": 97}, {"player_id": "SEA", "name": "Seattle Seahawks", "position": "DEF", "team": "SEA", "amount": 3, "is_keeper": false, "round": 4, "pick_no": 37}, {"player_id": "13330", "name": "Kenyon Sadiq", "position": "TE", "team": "NYJ", "amount": 1, "is_keeper": false, "round": 11, "pick_no": 131}, {"player_id": "6819", "name": "Michael Pittman", "position": "WR", "team": "PIT", "amount": 1, "is_keeper": false, "round": 13, "pick_no": 147}, {"player_id": "8110", "name": "Jake Ferguson", "position": "TE", "team": "DAL", "amount": 0, "is_keeper": false, "added": true}], "11": [{"player_id": "12514", "name": "Emeka Egbuka", "position": "WR", "team": "TB", "amount": 9, "is_keeper": true, "round": 1, "pick_no": 4, "keeper_tier": "K1"}, {"player_id": "12545", "name": "Tyler Shough", "position": "QB", "team": "NO", "amount": 6, "is_keeper": true, "round": 1, "pick_no": 3, "keeper_tier": "K1"}, {"player_id": "6794", "name": "Justin Jefferson", "position": "WR", "team": "MIN", "amount": 47, "is_keeper": false, "round": 5, "pick_no": 55}, {"player_id": "6904", "name": "Jalen Hurts", "position": "QB", "team": "PHI", "amount": 45, "is_keeper": false, "round": 4, "pick_no": 45}, {"player_id": "3198", "name": "Derrick Henry", "position": "RB", "team": "BAL", "amount": 36, "is_keeper": false, "round": 5, "pick_no": 54}, {"player_id": "11632", "name": "Malik Nabers", "position": "WR", "team": "NYG", "amount": 23, "is_keeper": false, "round": 2, "pick_no": 24}, {"player_id": "12519", "name": "Luther Burden", "position": "WR", "team": "CHI", "amount": 20, "is_keeper": false, "round": 7, "pick_no": 80}, {"player_id": "2216", "name": "Mike Evans", "position": "WR", "team": "SF", "amount": 15, "is_keeper": false, "round": 8, "pick_no": 87}, {"player_id": "13281", "name": "Jordyn Tyson", "position": "WR", "team": "NO", "amount": 4, "is_keeper": false, "round": 10, "pick_no": 109}, {"player_id": "3214", "name": "Hunter Henry", "position": "TE", "team": "NE", "amount": 1, "is_keeper": false, "round": 12, "pick_no": 141}, {"player_id": "13345", "name": "Jonah Coleman", "position": "RB", "team": "DEN", "amount": 1, "is_keeper": false, "round": 13, "pick_no": 149}, {"player_id": "9754", "name": "Quentin Johnston", "position": "WR", "team": "LAC", "amount": 1, "is_keeper": false, "round": 12, "pick_no": 133}, {"player_id": "13417", "name": "De'Zhaun Stribling", "position": "WR", "team": "SF", "amount": 0, "is_keeper": false, "added": true}, {"player_id": "LAC", "name": "Los Angeles Chargers", "position": "DEF", "team": "LAC", "amount": 0, "is_keeper": false, "added": true}], "1": [{"player_id": "9226", "name": "De'Von Achane", "position": "RB", "team": "MIA", "amount": 36, "is_keeper": true, "round": 1, "pick_no": 6, "keeper_tier": "K3"}, {"player_id": "7526", "name": "Jaylen Waddle", "position": "WR", "team": "DEN", "amount": 16, "is_keeper": true, "round": 1, "pick_no": 5, "keeper_tier": "K1"}, {"player_id": "11566", "name": "Jayden Daniels", "position": "QB", "team": "WAS", "amount": 50, "is_keeper": false, "round": 4, "pick_no": 44}, {"player_id": "8146", "name": "Garrett Wilson", "position": "WR", "team": "NYJ", "amount": 29, "is_keeper": false, "round": 6, "pick_no": 63}, {"player_id": "4892", "name": "Baker Mayfield", "position": "QB", "team": "TB", "amount": 18, "is_keeper": false, "round": 5, "pick_no": 50}, {"player_id": "12517", "name": "Colston Loveland", "position": "TE", "team": "CHI", "amount": 18, "is_keeper": false, "round": 3, "pick_no": 28}, {"player_id": "8148", "name": "Jameson Williams", "position": "WR", "team": "DET", "amount": 16, "is_keeper": false, "round": 6, "pick_no": 69}, {"player_id": "5892", "name": "David Montgomery", "position": "RB", "team": "HOU", "amount": 7, "is_keeper": false, "round": 8, "pick_no": 92}, {"player_id": "11628", "name": "Marvin Harrison", "position": "WR", "team": "ARI", "amount": 4, "is_keeper": false, "round": 9, "pick_no": 98}, {"player_id": "8142", "name": "Alec Pierce", "position": "WR", "team": "IND", "amount": 2, "is_keeper": false, "round": 9, "pick_no": 106}, {"player_id": "10232", "name": "Michael Wilson", "position": "WR", "team": "ARI", "amount": 2, "is_keeper": false, "round": 10, "pick_no": 118}, {"player_id": "NE", "name": "New England Patriots", "position": "DEF", "team": "NE", "amount": 1, "is_keeper": false, "round": 10, "pick_no": 114}, {"player_id": "7611", "name": "Rhamondre Stevenson", "position": "RB", "team": "NE", "amount": 1, "is_keeper": false, "round": 11, "pick_no": 126}], "2": [{"player_id": "9997", "name": "Zay Flowers", "position": "WR", "team": "BAL", "amount": 16, "is_keeper": true, "round": 1, "pick_no": 8, "keeper_tier": "K1"}, {"player_id": "4943", "name": "Sam Darnold", "position": "QB", "team": "SEA", "amount": 7, "is_keeper": true, "round": 1, "pick_no": 7, "keeper_tier": "K1"}, {"player_id": "9493", "name": "Puka Nacua", "position": "WR", "team": "LAR", "amount": 55, "is_keeper": false, "round": 3, "pick_no": 25}, {"player_id": "12507", "name": "Omarion Hampton", "position": "RB", "team": "LAC", "amount": 38, "is_keeper": false, "round": 5, "pick_no": 59}, {"player_id": "5850", "name": "Josh Jacobs", "position": "RB", "team": "GB", "amount": 21, "is_keeper": false, "round": 7, "pick_no": 77}, {"player_id": "5849", "name": "Kyler Murray", "position": "QB", "team": "MIN", "amount": 20, "is_keeper": false, "round": 7, "pick_no": 83}, {"player_id": "8167", "name": "Christian Watson", "position": "WR", "team": "GB", "amount": 17, "is_keeper": false, "round": 6, "pick_no": 72}, {"player_id": "9484", "name": "Tucker Kraft", "position": "TE", "team": "GB", "amount": 8, "is_keeper": false, "round": 9, "pick_no": 99}, {"player_id": "5045", "name": "Courtland Sutton", "position": "WR", "team": "DEN", "amount": 7, "is_keeper": false, "round": 8, "pick_no": 88}, {"player_id": "8161", "name": "Malik Willis", "position": "QB", "team": "MIA", "amount": 5, "is_keeper": false, "round": 10, "pick_no": 111}, {"player_id": "7021", "name": "Rico Dowdle", "position": "RB", "team": "PIT", "amount": 3, "is_keeper": false, "round": 10, "pick_no": 117}, {"player_id": "DEN", "name": "Denver Broncos", "position": "DEF", "team": "DEN", "amount": 1, "is_keeper": false, "round": 8, "pick_no": 93}, {"player_id": "8121", "name": "Romeo Doubs", "position": "WR", "team": "NE", "amount": 1, "is_keeper": false, "round": 9, "pick_no": 105}], "6": [{"player_id": "9221", "name": "Jahmyr Gibbs", "position": "RB", "team": "DET", "amount": 41, "is_keeper": true, "round": 1, "pick_no": 9, "keeper_tier": "K2"}, {"player_id": "7543", "name": "Travis Etienne", "position": "RB", "team": "NO", "amount": 6, "is_keeper": true, "round": 1, "pick_no": 10, "keeper_tier": "K1"}, {"player_id": "4984", "name": "Josh Allen", "position": "QB", "team": "BUF", "amount": 61, "is_keeper": false, "round": 2, "pick_no": 20}, {"player_id": "11635", "name": "Ladd McConkey", "position": "WR", "team": "LAC", "amount": 29, "is_keeper": false, "round": 6, "pick_no": 65}, {"player_id": "4046", "name": "Patrick Mahomes", "position": "QB", "team": "KC", "amount": 26, "is_keeper": false, "round": 2, "pick_no": 21}, {"player_id": "12490", "name": "Bhayshul Tuten", "position": "RB", "team": "JAX", "amount": 14, "is_keeper": false, "round": 7, "pick_no": 76}, {"player_id": "10859", "name": "Sam LaPorta", "position": "TE", "team": "DET", "amount": 11, "is_keeper": false, "round": 5, "pick_no": 58}, {"player_id": "12506", "name": "Harold Fannin", "position": "TE", "team": "CLE", "amount": 6, "is_keeper": false, "round": 5, "pick_no": 51}, {"player_id": "13286", "name": "Jadarian Price", "position": "RB", "team": "SEA", "amount": 2, "is_keeper": false, "round": 11, "pick_no": 121}, {"player_id": "11646", "name": "Jalen Coker", "position": "WR", "team": "CAR", "amount": 1, "is_keeper": false, "round": 13, "pick_no": 155}, {"player_id": "9756", "name": "Jordan Addison", "position": "WR", "team": "MIN", "amount": 1, "is_keeper": false, "round": 12, "pick_no": 137}, {"player_id": "8134", "name": "Khalil Shakir", "position": "WR", "team": "BUF", "amount": 1, "is_keeper": false, "round": 13, "pick_no": 145}, {"player_id": "PIT", "name": "Pittsburgh Steelers", "position": "DEF", "team": "PIT", "amount": 0, "is_keeper": false, "added": true}], "4": [{"player_id": "11620", "name": "Rome Odunze", "position": "WR", "team": "CHI", "amount": 13, "is_keeper": true, "round": 1, "pick_no": 11, "keeper_tier": "K1"}, {"player_id": "6813", "name": "Jonathan Taylor", "position": "RB", "team": "IND", "amount": 44, "is_keeper": false, "round": 4, "pick_no": 40}, {"player_id": "6797", "name": "Justin Herbert", "position": "QB", "team": "LAC", "amount": 37, "is_keeper": false, "round": 3, "pick_no": 33}, {"player_id": "11563", "name": "Bo Nix", "position": "QB", "team": "DEN", "amount": 32, "is_keeper": false, "round": 5, "pick_no": 57}, {"player_id": "7525", "name": "DeVonta Smith", "position": "WR", "team": "PHI", "amount": 27, "is_keeper": false, "round": 6, "pick_no": 67}, {"player_id": "9487", "name": "Parker Washington", "position": "WR", "team": "JAX", "amount": 15, "is_keeper": false, "round": 8, "pick_no": 94}, {"player_id": "12522", "name": "Cam Ward", "position": "QB", "team": "TEN", "amount": 14, "is_keeper": false, "round": 6, "pick_no": 64}, {"player_id": "10236", "name": "Dalton Kincaid", "position": "TE", "team": "BUF", "amount": 5, "is_keeper": false, "round": 8, "pick_no": 96}, {"player_id": "9500", "name": "Josh Downs", "position": "WR", "team": "IND", "amount": 3, "is_keeper": false, "round": 9, "pick_no": 108}, {"player_id": "11586", "name": "Blake Corum", "position": "RB", "team": "LAR", "amount": 1, "is_keeper": false, "round": 13, "pick_no": 146}, {"player_id": "11583", "name": "Jonathon Brooks", "position": "RB", "team": "CAR", "amount": 1, "is_keeper": false, "round": 10, "pick_no": 120}, {"player_id": "13298", "name": "KC Concepcion", "position": "WR", "team": "CLE", "amount": 1, "is_keeper": false, "round": 11, "pick_no": 130}, {"player_id": "JAX", "name": "Jacksonville Jaguars", "position": "DEF", "team": "JAX", "amount": 0, "is_keeper": false, "added": true}], "10": [{"player_id": "4034", "name": "Christian McCaffrey", "position": "RB", "team": "SF", "amount": 43, "is_keeper": true, "round": 2, "pick_no": 13, "keeper_tier": "K1"}, {"player_id": "8144", "name": "Chris Olave", "position": "WR", "team": "NO", "amount": 8, "is_keeper": true, "round": 1, "pick_no": 12, "keeper_tier": "K1"}, {"player_id": "11560", "name": "Caleb Williams", "position": "QB", "team": "CHI", "amount": 40, "is_keeper": false, "round": 3, "pick_no": 35}, {"player_id": "8155", "name": "Breece Hall", "position": "RB", "team": "NYJ", "amount": 29, "is_keeper": false, "round": 4, "pick_no": 48}, {"player_id": "8130", "name": "Trey McBride", "position": "TE", "team": "ARI", "amount": 27, "is_keeper": false, "round": 3, "pick_no": 27}, {"player_id": "8112", "name": "Drake London", "position": "WR", "team": "ATL", "amount": 26, "is_keeper": false, "round": 5, "pick_no": 53}, {"player_id": "421", "name": "Matthew Stafford", "position": "QB", "team": "LAR", "amount": 19, "is_keeper": false, "round": 7, "pick_no": 75}, {"player_id": "PHI", "name": "Philadelphia Eagles", "position": "DEF", "team": "PHI", "amount": 2, "is_keeper": false, "round": 8, "pick_no": 95}, {"player_id": "12489", "name": "RJ Harvey", "position": "RB", "team": "DEN", "amount": 2, "is_keeper": false, "round": 10, "pick_no": 113}, {"player_id": "6806", "name": "J.K. Dobbins", "position": "RB", "team": "DEN", "amount": 1, "is_keeper": false, "round": 13, "pick_no": 150}, {"player_id": "12534", "name": "Kyle Monangai", "position": "RB", "team": "CHI", "amount": 1, "is_keeper": false, "round": 12, "pick_no": 142}, {"player_id": "8408", "name": "Jordan Mason", "position": "RB", "team": "MIN", "amount": 0, "is_keeper": false, "added": true}, {"player_id": "6768", "name": "Tua Tagovailoa", "position": "QB", "team": "ATL", "amount": 0, "is_keeper": false, "added": true}], "9": [{"player_id": "8137", "name": "George Pickens", "position": "WR", "team": "DAL", "amount": 17, "is_keeper": true, "round": 2, "pick_no": 15, "keeper_tier": "K1"}, {"player_id": "12481", "name": "Cam Skattebo", "position": "RB", "team": "NYG", "amount": 6, "is_keeper": true, "round": 2, "pick_no": 14, "keeper_tier": "K1"}, {"player_id": "7547", "name": "Amon-Ra St. Brown", "position": "WR", "team": "DET", "amount": 47, "is_keeper": false, "round": 4, "pick_no": 46}, {"player_id": "12527", "name": "Ashton Jeanty", "position": "RB", "team": "LV", "amount": 39, "is_keeper": false, "round": 3, "pick_no": 32}, {"player_id": "8183", "name": "Brock Purdy", "position": "QB", "team": "SF", "amount": 27, "is_keeper": false, "round": 5, "pick_no": 56}, {"player_id": "5927", "name": "Terry McLaurin", "position": "WR", "team": "WAS", "amount": 17, "is_keeper": false, "round": 7, "pick_no": 82}, {"player_id": "13279", "name": "Carnell Tate", "position": "WR", "team": "TEN", "amount": 15, "is_keeper": false, "round": 8, "pick_no": 85}, {"player_id": "9758", "name": "C.J. Stroud", "position": "QB", "team": "HOU", "amount": 13, "is_keeper": false, "round": 7, "pick_no": 74}, {"player_id": "12529", "name": "TreVeyon Henderson", "position": "RB", "team": "NE", "amount": 12, "is_keeper": false, "round": 6, "pick_no": 66}, {"player_id": "9228", "name": "Bryce Young", "position": "QB", "team": "CAR", "amount": 7, "is_keeper": false, "round": 9, "pick_no": 104}, {"player_id": "5844", "name": "T.J. Hockenson", "position": "TE", "team": "MIN", "amount": 3, "is_keeper": false, "round": 10, "pick_no": 116}, {"player_id": "4217", "name": "George Kittle", "position": "TE", "team": "SF", "amount": 2, "is_keeper": false, "round": 11, "pick_no": 123}, {"player_id": "HOU", "name": "Houston Texans", "position": "DEF", "team": "HOU", "amount": 2, "is_keeper": false, "round": 8, "pick_no": 90}], "7": [{"player_id": "9224", "name": "Chase Brown", "position": "RB", "team": "CIN", "amount": 16, "is_keeper": true, "round": 2, "pick_no": 17, "keeper_tier": "K2"}, {"player_id": "9488", "name": "Jaxon Smith-Njigba", "position": "WR", "team": "SEA", "amount": 16, "is_keeper": true, "round": 2, "pick_no": 16, "keeper_tier": "K2"}, {"player_id": "4881", "name": "Lamar Jackson", "position": "QB", "team": "BAL", "amount": 62, "is_keeper": false, "round": 3, "pick_no": 29}, {"player_id": "7588", "name": "Javonte Williams", "position": "RB", "team": "DAL", "amount": 28, "is_keeper": false, "round": 7, "pick_no": 81}, {"player_id": "7523", "name": "Trevor Lawrence", "position": "QB", "team": "JAX", "amount": 28, "is_keeper": false, "round": 5, "pick_no": 49}, {"player_id": "10229", "name": "Rashee Rice", "position": "WR", "team": "KC", "amount": 14, "is_keeper": false, "round": 5, "pick_no": 60}, {"player_id": "4983", "name": "DJ Moore", "position": "WR", "team": "BUF", "amount": 12, "is_keeper": false, "round": 8, "pick_no": 91}, {"player_id": "6790", "name": "D'Andre Swift", "position": "RB", "team": "CHI", "amount": 8, "is_keeper": false, "round": 9, "pick_no": 103}, {"player_id": "LAR", "name": "Los Angeles Rams", "position": "DEF", "team": "LAR", "amount": 2, "is_keeper": false, "round": 7, "pick_no": 78}, {"player_id": "96", "name": "Aaron Rodgers", "position": "QB", "team": "PIT", "amount": 1, "is_keeper": false, "round": 13, "pick_no": 151}, {"player_id": "3257", "name": "Jacoby Brissett", "position": "QB", "team": "ARI", "amount": 1, "is_keeper": false, "round": 12, "pick_no": 144}, {"player_id": "5012", "name": "Mark Andrews", "position": "TE", "team": "BAL", "amount": 1, "is_keeper": false, "round": 11, "pick_no": 127}, {"player_id": "9502", "name": "Tank Dell", "position": "WR", "team": "HOU", "amount": 1, "is_keeper": false, "round": 12, "pick_no": 136}, {"player_id": "13414", "name": "Kaelon Black", "position": "RB", "team": "SF", "amount": 0, "is_keeper": false, "added": true}], "8": [{"player_id": "12518", "name": "Tyler Warren", "position": "TE", "team": "IND", "amount": 14, "is_keeper": true, "round": 2, "pick_no": 18, "keeper_tier": "K1"}, {"player_id": "10222", "name": "Jayden Reed", "position": "WR", "team": "GB", "amount": 6, "is_keeper": true, "round": 2, "pick_no": 19, "keeper_tier": "K1"}, {"player_id": "9509", "name": "Bijan Robinson", "position": "RB", "team": "ATL", "amount": 60, "is_keeper": false, "round": 2, "pick_no": 22}, {"player_id": "5859", "name": "A.J. Brown", "position": "WR", "team": "NE", "amount": 35, "is_keeper": false, "round": 4, "pick_no": 43}, {"player_id": "7569", "name": "Nico Collins", "position": "WR", "team": "HOU", "amount": 33, "is_keeper": false, "round": 3, "pick_no": 36}, {"player_id": "3163", "name": "Jared Goff", "position": "QB", "team": "DET", "amount": 26, "is_keeper": false, "round": 7, "pick_no": 73}, {"player_id": "8150", "name": "Kyren Williams", "position": "RB", "team": "LAR", "amount": 13, "is_keeper": false, "round": 7, "pick_no": 84}, {"player_id": "BAL", "name": "Baltimore Ravens", "position": "DEF", "team": "BAL", "amount": 2, "is_keeper": false, "round": 9, "pick_no": 102}, {"player_id": "2449", "name": "Stefon Diggs", "position": "WR", "team": "WAS", "amount": 2, "is_keeper": false, "round": 11, "pick_no": 124}, {"player_id": "1373", "name": "Geno Smith", "position": "QB", "team": "NYJ", "amount": 1, "is_keeper": false, "round": 9, "pick_no": 107}, {"player_id": "8228", "name": "Jaylen Warren", "position": "RB", "team": "PIT", "amount": 0, "is_keeper": false, "added": true}, {"player_id": "7002", "name": "Juwan Johnson", "position": "TE", "team": "NO", "amount": 0, "is_keeper": false, "added": true}, {"player_id": "11581", "name": "MarShawn Lloyd", "position": "RB", "team": "GB", "amount": 0, "is_keeper": false, "added": true}], "3": [{"player_id": "4866", "name": "Saquon Barkley", "position": "RB", "team": "PHI", "amount": 49, "is_keeper": false, "round": 3, "pick_no": 30}, {"player_id": "6801", "name": "Tee Higgins", "position": "WR", "team": "CIN", "amount": 36, "is_keeper": false, "round": 6, "pick_no": 62}, {"player_id": "13287", "name": "Jeremiyah Love", "position": "RB", "team": "ARI", "amount": 28, "is_keeper": false, "round": 4, "pick_no": 42}, {"player_id": "6804", "name": "Jordan Love", "position": "QB", "team": "GB", "amount": 28, "is_keeper": false, "round": 6, "pick_no": 68}, {"player_id": "11604", "name": "Brock Bowers", "position": "TE", "team": "LV", "amount": 27, "is_keeper": false, "round": 3, "pick_no": 26}, {"player_id": "5870", "name": "Daniel Jones", "position": "QB", "team": "IND", "amount": 6, "is_keeper": false, "round": 8, "pick_no": 86}, {"player_id": "1466", "name": "Travis Kelce", "position": "TE", "team": "KC", "amount": 6, "is_keeper": false, "round": 4, "pick_no": 39}, {"player_id": "8126", "name": "Wan'Dale Robinson", "position": "WR", "team": "TEN", "amount": 5, "is_keeper": false, "round": 10, "pick_no": 110}, {"player_id": "5947", "name": "Jakobi Meyers", "position": "WR", "team": "JAX", "amount": 3, "is_keeper": false, "round": 9, "pick_no": 100}, {"player_id": "7049", "name": "Jauan Jennings", "position": "WR", "team": "MIN", "amount": 1, "is_keeper": false, "round": 13, "pick_no": 153}, {"player_id": "7567", "name": "Kenny Gainwell", "position": "RB", "team": "TB", "amount": 1, "is_keeper": false, "round": 13, "pick_no": 148}, {"player_id": "MIN", "name": "Minnesota Vikings", "position": "DEF", "team": "MIN", "amount": 1, "is_keeper": false, "round": 12, "pick_no": 140}, {"player_id": "5967", "name": "Tony Pollard", "position": "RB", "team": "TEN", "amount": 1, "is_keeper": false, "round": 11, "pick_no": 132}, {"player_id": "9482", "name": "Michael Mayer", "position": "TE", "team": "LV", "amount": 0, "is_keeper": false, "added": true}], "12": [{"player_id": "6786", "name": "CeeDee Lamb", "position": "WR", "team": "DAL", "amount": 46, "is_keeper": false, "round": 4, "pick_no": 41}, {"player_id": "6770", "name": "Joe Burrow", "position": "QB", "team": "CIN", "amount": 43, "is_keeper": false, "round": 4, "pick_no": 47}, {"player_id": "3294", "name": "Dak Prescott", "position": "QB", "team": "DAL", "amount": 36, "is_keeper": false, "round": 6, "pick_no": 61}, {"player_id": "8151", "name": "Kenneth Walker", "position": "RB", "team": "KC", "amount": 31, "is_keeper": false, "round": 3, "pick_no": 34}, {"player_id": "2133", "name": "Davante Adams", "position": "WR", "team": "LAR", "amount": 22, "is_keeper": false, "round": 7, "pick_no": 79}, {"player_id": "8131", "name": "Isaiah Likely", "position": "TE", "team": "NYG", "amount": 4, "is_keeper": false, "round": 3, "pick_no": 31}, {"player_id": "7553", "name": "Kyle Pitts", "position": "TE", "team": "ATL", "amount": 4, "is_keeper": false, "round": 10, "pick_no": 115}, {"player_id": "5846", "name": "DK Metcalf", "position": "WR", "team": "PIT", "amount": 3, "is_keeper": false, "round": 9, "pick_no": 101}, {"player_id": "4037", "name": "Chris Godwin", "position": "WR", "team": "TB", "amount": 2, "is_keeper": false, "round": 11, "pick_no": 122}, {"player_id": "5872", "name": "Deebo Samuel", "position": "WR", "team": "SF", "amount": 2, "is_keeper": false, "round": 12, "pick_no": 134}, {"player_id": "7594", "name": "Chuba Hubbard", "position": "RB", "team": "CAR", "amount": 1, "is_keeper": false, "round": 12, "pick_no": 135}, {"player_id": "5022", "name": "Dallas Goedert", "position": "TE", "team": "PHI", "amount": 1, "is_keeper": false, "round": 12, "pick_no": 143}, {"player_id": "NYJ", "name": "New York Jets", "position": "DEF", "team": "NYJ", "amount": 0, "is_keeper": false, "added": true}]}, "draft_budget_default": 200, "pre_sleeper_champions": [{"year": 2008, "champion": "Sergey Weinstein"}, {"year": 2009, "champion": "Vladimir Kovtun"}, {"year": 2010, "champion": null}, {"year": 2011, "champion": null}, {"year": 2012, "champion": null}, {"year": 2013, "champion": null}, {"year": 2014, "champion": "David Olesh and Eric Broder"}, {"year": 2015, "champion": "Vladimir Kovtun"}, {"year": 2016, "champion": "Douglas Tak"}, {"year": 2017, "champion": "Edward Seo"}, {"year": 2018, "champion": "Paul Chin"}, {"year": 2019, "champion": "Paul Chin and Nick Oxenhorn"}, {"year": 2020, "champion": "Dave Olesh"}, {"year": 2021, "champion": "Will Andersen and Jonathan Fishner"}], "real_names": {"pchin81": "Paul Chin", "nickox": "Nick Oxenhorn", "dolesh2": "Dave Olesh", "rhlee13": "Rich Lee", "dhuang1": "Danny Huang", "andrewhwang07": "Andrew Hwang", "Dougisme": "Douglas Tak", "Wdanders888": "Will Andersen", "jfishner": "Jonathan Fishner", "ChickenFriedFantasy": "Freeman Field", "ChokeNoJoke": "Manan Shah"}, "keeper_ledger": {"2021": [{"team": "Andrew", "keepers": ["J.K. Dobbins (K1 – $6)", "Stefon Diggs (K1 – $19)"]}, {"team": "Will/Fish", "keepers": ["Keenan Allen (K2 – $18)", "Justin Jefferson (K1 – $6)"]}, {"team": "Chin/Oxenhorn", "keepers": ["Henderson (K1 – $6)", "George Kittle (K3 – $36)"]}, {"team": "Dave", "keepers": ["Miles Sanders (K2 – $16)", "Travis Kelce (K1 – $46)"]}, {"team": "Nassar", "keepers": ["Russell Wilson (K2 – $25)", "Ronald Jones II (Restricted)"]}, {"team": "Doug", "keepers": ["Justin Herbert (Restricted)", "Austin Ekeler (K2 – $16)"]}, {"team": "Peter", "keepers": ["A.J. Brown (K1 – $32)", "Ryan Tannehill (K1 – $15)"]}, {"team": "Serge", "keepers": ["Derrick Henry (K2 – $43)"]}, {"team": "Rich", "keepers": ["Kyler Murray (K2 – $23)", "DK Metcalf (K2 – $16)"]}, {"team": "Vlad", "keepers": ["David Montgomery (K1 – $11)"]}, {"team": "Eddie", "keepers": ["Patrick Mahomes (K3 – $41)", "Jonathan Taylor (K1 – $23)"]}, {"team": "Manan/Freeman", "keepers": ["Aaron Jones (K2 – $38)"]}], "2023": [{"team": "Andrew", "keepers": ["Ja'Marr Chase (K2 – $29)", "Garrett Wilson (K1 – $8)"]}, {"team": "Will/Fish", "keepers": ["Justin Jefferson (K3 – $36)", "Drake London (K1 – $8)"]}, {"team": "Chin/Oxenhorn", "keepers": ["Justin Fields (K1 – $19)", "T.J. Hockenson (K1 – $18)"]}, {"team": "Dave", "keepers": ["Daniel Jones (K1 – $13)", "DeAndre Hopkins (K1 – $8)"]}, {"team": "Nassar", "keepers": ["Josh Jacobs (K1 – $11)", "Deshaun Watson (K2 – $22)"]}, {"team": "Doug", "keepers": ["Tony Pollard (K1 – $7)"]}, {"team": "Peter", "keepers": ["Trevor Lawrence (K1 – $23)", "Chris Olave (K1 – $7)"]}, {"team": "Serge", "keepers": ["Jalen Hurts (K2 – $41)", "DJ Moore (K1 – $22)"]}, {"team": "Rich", "keepers": []}, {"team": "Vlad/Jesse", "keepers": ["Amon-Ra St. Brown (K1 – $20)", "Kenneth Walker III (K1 – $9)"]}, {"team": "Eddie", "keepers": ["Tyreek Hill (K1 – $32)", "Tee Higgins (K1 – $24)"]}, {"team": "Manan/Freeman", "keepers": ["Jerry Jeudy (K1 – $21)", "James Conner (K1 – $11)"]}], "2024": [{"team": "Andrew", "keepers": ["Brock Purdy", "Breece Hall"]}, {"team": "Will/Fish", "keepers": ["Nico Collins", "Raheem Mostert"]}, {"team": "Chin/Oxenhorn", "keepers": ["De'Von Achane", "Garrett Wilson"]}, {"team": "Dave", "keepers": ["Jared Goff", "Rachaad White"]}, {"team": "Nassar", "keepers": ["Evan Engram", "Josh Jacobs"]}, {"team": "Doug", "keepers": ["C.J. Stroud", "Jonathan Taylor"]}, {"team": "Peter", "keepers": ["Chris Olave", "Isiah Pacheco"]}, {"team": "Serge", "keepers": ["Jalen Hurts", "DJ Moore"]}, {"team": "Rich/Danny", "keepers": ["Bijan Robinson", "Michael Pittman Jr."]}, {"team": "Vlad/Jesse", "keepers": ["Travis Etienne", "Amon-Ra St. Brown"]}, {"team": "Eddie", "keepers": ["Tyreek Hill", "Anthony Richardson"]}, {"team": "Manan/Freeman", "keepers": ["CeeDee Lamb", "Jordan Love"]}], "2025": [{"team": "Andrew", "keepers": ["Drake Maye (K1 – $6)", "Justin Fields (K1 – $6)"]}, {"team": "Will/Fish", "keepers": ["Nico Collins (K2 – $16)", "Malik Nabers (K1 – $34)"]}, {"team": "Chin/Oxenhorn", "keepers": ["De'Von Achane (K2 – $16)", "Brock Purdy (K2 – $21)"]}, {"team": "Dave", "keepers": ["Jaylen Warren (K1 – $6)"]}, {"team": "Nassar", "keepers": ["Saquon Barkley (K1 – $46)", "Justin Herbert (K1 – $30)"]}, {"team": "Doug", "keepers": ["Jahmyr Gibbs (K1 – $31)", "Derrick Henry (K1 – $36)"]}, {"team": "Peter", "keepers": ["Baker Mayfield (K1 – $20)", "Trey McBride (K1 – $23)"]}, {"team": "Serge/Vlad", "keepers": ["Jayden Daniels (K1 – $46)", "Brian Thomas Jr. (K1 – $6)"]}, {"team": "Rich/Danny", "keepers": ["Bijan Robinson (K2 – $49)"]}, {"team": "Jesse", "keepers": ["David Njoku (K1 – $6)", "Amon-Ra St. Brown (K3 – $50)"]}, {"team": "Eddie", "keepers": ["Chase Brown (K1 – $6)", "Jaxon Smith-Njigba (K1 – $6)"]}, {"team": "Manan/Freeman", "keepers": ["CeeDee Lamb (K2 – $52)", "Jameson Williams (K1 – $7)"]}], "2026": [{"team": "Andrew", "keepers": ["Drake Maye (K2 – $16)", "Jaxson Dart (K1 – $6)"]}, {"team": "Will/Fish", "keepers": ["Emeka Egbuka (K1 – $9)", "Tyler Shough (K1 – $6)"]}, {"team": "Chin/Oxenhorn", "keepers": ["Jaylen Waddle (K1 – $16)", "De'Von Achane (K3 – $36)"]}, {"team": "Dave", "keepers": ["Sam Darnold (K1 – $7)", "Zay Flowers (K1 – $16)"]}, {"team": "Nassar", "keepers": []}, {"team": "Doug", "keepers": ["Jahmyr Gibbs (K2 – $41)", "Travis Etienne (K1 – $6)"]}, {"team": "Peter", "keepers": ["Rome Odunze (K1 – $13)"]}, {"team": "Serge/Vlad", "keepers": ["Chris Olave (K1 – $8)", "Christian McCaffrey (K1 – $43)"]}, {"team": "Rich/Danny", "keepers": []}, {"team": "Jesse", "keepers": ["George Pickens (K1 – $17)", "Cam Skattebo (K1 – $6)"]}, {"team": "Eddie", "keepers": ["Jaxon Smith-Njigba (K2 – $16)", "Chase Brown (K2 – $16)"]}, {"team": "Manan/Freeman", "keepers": ["Tyler Warren (K1 – $14)", "Jayden Reed (K1 – $6)"]}]}, "roster_nickname_2026": {"1": "Chin/Oxenhorn", "2": "Dave", "3": "Rich/Danny", "4": "Peter", "5": "Andrew", "6": "Doug", "7": "Eddie", "8": "Manan/Freeman", "9": "Jesse", "10": "Serge/Vlad", "11": "Will/Fish", "12": "Nassar"}, "keeper_counts_2026": {"5": 2, "11": 2, "1": 2, "2": 2, "6": 2, "4": 1, "10": 2, "9": 2, "7": 2, "8": 2, "3": 0, "12": 0}, "standings_2026": {"1": {"wins": 0, "losses": 1, "ties": 0, "fpts": 105.4, "fpts_against": 143.76}, "2": {"wins": 0, "losses": 1, "ties": 0, "fpts": 97.14, "fpts_against": 117.3}, "3": {"wins": 0, "losses": 1, "ties": 0, "fpts": 89.72, "fpts_against": 121.46}, "4": {"wins": 1, "losses": 0, "ties": 0, "fpts": 117.3, "fpts_against": 97.14}, "5": {"wins": 0, "losses": 1, "ties": 0, "fpts": 106.92, "fpts_against": 199.32}, "6": {"wins": 1, "losses": 0, "ties": 0, "fpts": 199.32, "fpts_against": 106.92}, "7": {"wins": 1, "losses": 0, "ties": 0, "fpts": 163.06, "fpts_against": 138.76}, "8": {"wins": 0, "losses": 1, "ties": 0, "fpts": 118.04, "fpts_against": 154.72}, "9": {"wins": 1, "losses": 0, "ties": 0, "fpts": 121.46, "fpts_against": 89.72}, "10": {"wins": 1, "losses": 0, "ties": 0, "fpts": 143.76, "fpts_against": 105.4}, "11": {"wins": 1, "losses": 0, "ties": 0, "fpts": 154.72, "fpts_against": 118.04}, "12": {"wins": 0, "losses": 1, "ties": 0, "fpts": 138.76, "fpts_against": 163.06}}, "snapshot_at": "Sep 19, 2026 20:45 UTC"};
+
+/* ---------------- Tabs ---------------- */
+const tabButtons = document.querySelectorAll('nav.tabs button');
+tabButtons.forEach(btn=>{
+  btn.addEventListener('click', ()=>{
+    tabButtons.forEach(b=>b.setAttribute('aria-selected','false'));
+    btn.setAttribute('aria-selected','true');
+    document.querySelectorAll('.panel').forEach(p=>p.classList.remove('active'));
+    document.getElementById('panel-'+btn.dataset.tab).classList.add('active');
+    history.replaceState(null,'','#'+btn.dataset.tab);
+    window.scrollTo({top:0, behavior:'auto'});
+  });
+});
+(function initTabFromHash(){
+  const h = location.hash.replace('#','');
+  const match = [...tabButtons].find(b=>b.dataset.tab===h);
+  if(match) match.click();
+})();
+
+function esc(s){
+  return String(s==null?'':s).replace(/[&<>"']/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+function money(n){ return '$'+Math.round(n); }
+
+/* ==================================================================
+   LIVE DATA LAYER
+   The page ships with a baked snapshot of Sleeper data so it renders
+   instantly and still works offline. On load it then tries to refresh
+   from Sleeper's public API. Two transport routes are attempted, in
+   order: a direct browser call, then a same-origin proxy (the
+   Cloudflare Pages Function in functions/api/). If both fail, the
+   baked snapshot stands and the status pill says so.
+   ================================================================== */
+
+const LEAGUE_ID = DATA.sleeper_league_id;
+const API_BASES    = ['https://api.sleeper.app/v1',   '/api/sleeper/v1'];
+const PLAYER_BASES = ['https://api.sleeper.com/players/nfl', '/api/players/nfl'];
+const resolvedBase = { api: null, player: null };
+
+const NFL_TEAMS = {
+  ARI:'Arizona Cardinals', ATL:'Atlanta Falcons', BAL:'Baltimore Ravens', BUF:'Buffalo Bills',
+  CAR:'Carolina Panthers', CHI:'Chicago Bears', CIN:'Cincinnati Bengals', CLE:'Cleveland Browns',
+  DAL:'Dallas Cowboys', DEN:'Denver Broncos', DET:'Detroit Lions', GB:'Green Bay Packers',
+  HOU:'Houston Texans', IND:'Indianapolis Colts', JAX:'Jacksonville Jaguars', KC:'Kansas City Chiefs',
+  LAC:'Los Angeles Chargers', LAR:'Los Angeles Rams', LV:'Las Vegas Raiders', MIA:'Miami Dolphins',
+  MIN:'Minnesota Vikings', NE:'New England Patriots', NO:'New Orleans Saints', NYG:'New York Giants',
+  NYJ:'New York Jets', PHI:'Philadelphia Eagles', PIT:'Pittsburgh Steelers', SEA:'Seattle Seahawks',
+  SF:'San Francisco 49ers', TB:'Tampa Bay Buccaneers', TEN:'Tennessee Titans', WAS:'Washington Commanders'
+};
+
+let liveState = null;
+
+const PLAYER_CACHE_KEY = 'pegleg.players.v1';
+let playerCache = {};
+try { playerCache = JSON.parse(localStorage.getItem(PLAYER_CACHE_KEY) || '{}'); } catch(e){ playerCache = {}; }
+function savePlayerCache(){
+  try { localStorage.setItem(PLAYER_CACHE_KEY, JSON.stringify(playerCache)); } catch(e){}
+}
+
+async function fetchFrom(kind, path){
+  const bases = kind === 'api' ? API_BASES : PLAYER_BASES;
+  const order = resolvedBase[kind] ? [resolvedBase[kind]] : bases;
+  for(const base of order){
+    try{
+      const res = await fetch(base + path, { cache:'no-store' });
+      if(!res.ok) continue;
+      const json = await res.json();
+      resolvedBase[kind] = base;
+      return json;
+    }catch(e){ /* fall through to the next transport */ }
+  }
+  return null;
+}
+
+function setStatus(state, text){
+  const pill = document.getElementById('statusPill');
+  const label = document.getElementById('statusText');
+  if(!pill || !label) return;
+  pill.setAttribute('data-state', state);
+  label.textContent = text;
+}
+
+function timeLabel(d){
+  return d.toLocaleTimeString([], { hour:'numeric', minute:'2-digit' });
+}
+
+function bakedPlayerIndex(){
+  const idx = {};
+  Object.keys(DATA.rosters_2026 || {}).forEach(rid=>{
+    (DATA.rosters_2026[rid] || []).forEach(p=>{ idx[p.player_id] = p; });
+  });
+  return idx;
+}
+
+async function refreshLive(){
+  setStatus('loading', 'Checking Sleeper…');
+
+  const [rosters, users] = await Promise.all([
+    fetchFrom('api', '/league/' + LEAGUE_ID + '/rosters'),
+    fetchFrom('api', '/league/' + LEAGUE_ID + '/users')
+  ]);
+
+  if(!Array.isArray(rosters) || !rosters.length){
+    setStatus('offline', 'Saved snapshot · ' + (DATA.snapshot_at || 'cached'));
+    return;
+  }
+
+  const userById = {};
+  (users || []).forEach(u=>{ userById[u.user_id] = u; });
+
+  const standings = {}, rosterIds = {}, teamMeta = {};
+  rosters.forEach(r=>{
+    const rid = String(r.roster_id);
+    const s = r.settings || {};
+    standings[rid] = {
+      wins: s.wins || 0,
+      losses: s.losses || 0,
+      ties: s.ties || 0,
+      fpts: (s.fpts || 0) + (s.fpts_decimal || 0) / 100,
+      fpts_against: (s.fpts_against || 0) + (s.fpts_against_decimal || 0) / 100
+    };
+    rosterIds[rid] = r.players || [];
+
+    const owner = userById[r.owner_id];
+    const cos = (r.co_owners || []).map(id=>userById[id]).filter(Boolean);
+    if(owner){
+      const tn = owner.metadata && owner.metadata.team_name ? owner.metadata.team_name.trim() : '';
+      teamMeta[rid] = {
+        team_name: tn || owner.display_name,
+        manager: owner.display_name,
+        co_manager: cos.length ? cos.map(u=>u.display_name).join(' & ') : null
+      };
+    } else if(DATA.teams_2026[rid]){
+      teamMeta[rid] = DATA.teams_2026[rid];
+    }
+  });
+
+  // Name anyone picked up since the draft. Team defenses resolve locally;
+  // real players get one small lookup each, cached in the browser.
+  const idx = bakedPlayerIndex();
+  const unknown = [];
+  Object.keys(rosterIds).forEach(rid=>{
+    rosterIds[rid].forEach(pid=>{
+      if(!idx[pid] && !NFL_TEAMS[pid] && !playerCache[pid] && unknown.indexOf(pid) === -1){
+        unknown.push(pid);
+      }
+    });
+  });
+
+  if(unknown.length){
+    await Promise.all(unknown.slice(0, 40).map(async pid=>{
+      const p = await fetchFrom('player', '/' + pid);
+      if(p && p.player_id){
+        playerCache[pid] = {
+          player_id: pid,
+          name: ((p.first_name || '') + ' ' + (p.last_name || '')).trim() || ('Player ' + pid),
+          position: p.position || (p.fantasy_positions || [])[0] || '',
+          team: p.team || 'FA'
+        };
+      }
+    }));
+    savePlayerCache();
+  }
+
+  const mergedRosters = {};
+  Object.keys(rosterIds).forEach(rid=>{
+    mergedRosters[rid] = rosterIds[rid].map(pid=>{
+      if(idx[pid]) return Object.assign({}, idx[pid]);
+      if(NFL_TEAMS[pid]) return { player_id:pid, name:NFL_TEAMS[pid], position:'DEF', team:pid, amount:0, is_keeper:false, added:true };
+      if(playerCache[pid]) return Object.assign({}, playerCache[pid], { amount:0, is_keeper:false, added:true });
+      return { player_id:pid, name:'Player ' + pid, position:'', team:'', amount:0, is_keeper:false, added:true };
+    }).sort((a,b)=>
+      (Number(!!b.is_keeper) - Number(!!a.is_keeper)) ||
+      ((b.amount || 0) - (a.amount || 0)) ||
+      String(a.name).localeCompare(String(b.name))
+    );
+  });
+
+  liveState = { standings, rosters: mergedRosters, teams: teamMeta, fetchedAt: new Date() };
+  renderRosters();
+  renderStandings();
+  setStatus('live', 'Live from Sleeper · ' + timeLabel(liveState.fetchedAt));
+}
+
+function currentTeams(){
+  return (liveState && liveState.teams && Object.keys(liveState.teams).length) ? liveState.teams : DATA.teams_2026;
+}
+function currentRosters(){
+  return (liveState && liveState.rosters) ? liveState.rosters : DATA.rosters_2026;
+}
+function currentStandings(){
+  return (liveState && liveState.standings) ? liveState.standings : (DATA.standings_2026 || {});
+}
+
+/* ---------------- History panel ---------------- */
+function renderHistory(){
+  const seasons = Object.keys(DATA.history).sort((a,b)=>b-a);
+  const el = document.getElementById('panel-history');
+
+  let champHtml = seasons.map(season=>{
+    const rows = DATA.history[season];
+    const champ = rows.find(r=>r.is_champion);
+    if(!champ) return '';
+    const real = DATA.real_names[champ.manager];
+    return `<div class="card champ-card">
+      <div class="champ-year">${season} &middot; Tamiki Cup</div>
+      <div class="champ-trophy">🏆</div>
+      <div class="champ-team">${esc(champ.team_name)}</div>
+      <div class="champ-manager">${esc(champ.manager)}${real?' &middot; '+esc(real):''}</div>
+      <div class="champ-record tabular">${champ.wins}&ndash;${champ.losses} &middot; ${champ.fpts.toFixed(1)} pts</div>
+    </div>`;
+  }).join('');
+
+  const preSleeperRows = (DATA.pre_sleeper_champions||[]).slice().sort((a,b)=>b.year-a.year).map(y=>`
+    <tr>
+      <td class="num">${y.year}</td>
+      <td>${y.champion? esc(y.champion) : '<span style="color:var(--text-muted)">&mdash; no champion on record &mdash;</span>'}</td>
+    </tr>`).join('');
+
+  const rec = DATA.league_records;
+  function recordCard(label, r, valueFn){
+    return `<div class="card record-card">
+      <div class="record-label">${label}</div>
+      <div class="record-value">${valueFn(r)}</div>
+      <div class="record-who">${esc(r.team_name)} &middot; ${esc(r.manager)} &middot; ${r.season}</div>
+    </div>`;
+  }
+  let recordsHtml = [
+    recordCard('Best Regular Season', rec.best_record, r=>`${r.wins}-${r.losses}`),
+    recordCard('Most Points, One Season', rec.most_points_scored, r=>r.fpts.toFixed(1)),
+    recordCard('Best Point Differential', rec.best_point_diff, r=>'+'+(r.fpts-r.fpts_against).toFixed(1)),
+    recordCard('Toughest Season (Fewest Wins)', rec.worst_record, r=>`${r.wins}-${r.losses}`),
+  ].join('');
+
+  let seasonAccordions = seasons.map((season,i)=>{
+    const rows = DATA.history[season];
+    const trs = rows.map(r=>`
+      <tr class="${r.is_champion?'is-champ':''}">
+        <td class="num rankcell">${r.rank}</td>
+        <td>${esc(r.team_name)}</td>
+        <td>${esc(r.manager)}</td>
+        <td class="num tabular">${r.wins}-${r.losses}</td>
+        <td class="num tabular">${r.fpts.toFixed(1)}</td>
+        <td class="num tabular">${r.fpts_against.toFixed(1)}</td>
+      </tr>`).join('');
+    return `<div class="card season-block">
+      <button class="season-head" aria-expanded="${i===0?'true':'false'}" data-season="${season}">
+        <span>${season} Season</span>
+        <span class="chev">&#9656;</span>
+      </button>
+      <div class="season-body ${i===0?'open':''}">
+        <div class="table-wrap"><table>
+          <thead><tr><th>#</th><th>Team</th><th>Manager</th><th class="num">Record</th><th class="num">PF</th><th class="num">PA</th></tr></thead>
+          <tbody>${trs}</tbody>
+        </table></div>
+      </div>
+    </div>`;
+  }).join('');
+
+  const ledgerYears = Object.keys(DATA.keeper_ledger||{}).sort((a,b)=>b-a);
+  let ledgerAccordions = ledgerYears.map((year,i)=>{
+    const rows = DATA.keeper_ledger[year];
+    const trs = rows.map(r=>`
+      <tr>
+        <td>${esc(r.team)}</td>
+        <td>${r.keepers.length? r.keepers.map(esc).join('<br>') : '<span style="color:var(--text-muted)">N/A</span>'}</td>
+      </tr>`).join('');
+    return `<div class="card season-block">
+      <button class="season-head ledger-head" aria-expanded="false" data-year="${year}">
+        <span>${year} Keepers</span>
+        <span class="chev">&#9656;</span>
+      </button>
+      <div class="season-body">
+        <div class="table-wrap"><table>
+          <thead><tr><th>Team</th><th>Keepers Selected</th></tr></thead>
+          <tbody>${trs}</tbody>
+        </table></div>
+      </div>
+    </div>`;
+  }).join('');
+
+  el.innerHTML = `
+    <section class="block">
+      <div class="eyebrow">League Champions</div>
+      <h2>The Tamiki Cup, Year by Year</h2>
+      <p class="lede">Every Pegleg Dynasty champion since the league's Sleeper era began in 2022.</p>
+      <div class="champ-row">${champHtml}</div>
+    </section>
+
+    <section class="block">
+      <div class="eyebrow">Before Sleeper</div>
+      <h2>Pre-Sleeper Champions</h2>
+      <p class="lede">Pegleg Dynasty traces back to 2008. Full box scores from these years aren't on Sleeper, but the champions are on record.</p>
+      <div class="card table-wrap">
+        <table>
+          <thead><tr><th class="num">Year</th><th>Champion</th></tr></thead>
+          <tbody>${preSleeperRows}</tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="eyebrow">Record Book</div>
+      <h2>League Records</h2>
+      <p class="lede">The best and worst regular seasons on the books, 2022&ndash;2025.</p>
+      <div class="records-grid">${recordsHtml}</div>
+    </section>
+
+    <section class="block">
+      <div class="eyebrow">Season by Season</div>
+      <h2>Full Standings Archive</h2>
+      <p class="lede">Final regular-season standings for every completed Pegleg Dynasty season. Tap a year to expand it.</p>
+      ${seasonAccordions}
+    </section>
+
+    <section class="block">
+      <div class="eyebrow">The Ledger</div>
+      <h2>Keeper History</h2>
+      <p class="lede">Who each team kept, year by year, straight from the commissioner's keeper tracker. Team labels are the league's own shorthand from the tracker &mdash; some pairings shifted over the years as co-managers joined or swapped rosters. Prices include the K1&ndash;K4 tax where noted.</p>
+      ${ledgerAccordions}
+    </section>
+  `;
+
+  el.querySelectorAll('.season-head').forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      const open = btn.getAttribute('aria-expanded')==='true';
+      btn.setAttribute('aria-expanded', open?'false':'true');
+      btn.nextElementSibling.classList.toggle('open', !open);
+    });
+  });
+}
+
+/* ---------------- Rosters panel ---------------- */
+function renderRosters(){
+  const el = document.getElementById('panel-rosters');
+  const teams = currentTeams();
+  const rosters = currentRosters();
+  const teamIds = Object.keys(teams).sort((a,b)=>a-b);
+  const cards = teamIds.map(id=>{
+    const team = teams[id];
+    const players = rosters[id] || [];
+    const spend = players.reduce((s,p)=>s+(p.amount||0),0);
+    const items = players.map(p=>`
+      <li class="${p.is_keeper?'is-keeper':''}">
+        <span class="pos-chip">${esc(p.position)}</span>
+        <span class="p-name">${esc(p.name)}</span>
+        <span class="p-team ui">${esc(p.team||'')}</span>
+        ${p.is_keeper?`<span class="keeper-badge">${esc(p.keeper_tier||'Keeper')}</span>`:''}
+        ${p.added?'<span class="fa-chip">Added</span>':''}
+        <span class="p-price">${p.added ? '&mdash;' : money(p.amount||0)}</span>
+      </li>`).join('');
+    return `<div class="card roster-card">
+      <div class="roster-card-head">
+        <h3>${esc(team.team_name)}</h3>
+        ${team.team_name!==team.manager?`<div class="mgr">${esc(team.manager)}${team.co_manager? ' &amp; '+esc(team.co_manager):''}</div>`:''}
+        <div class="spend">$${spend} of draft budget spent &middot; ${players.filter(p=>p.is_keeper).length} keeper${players.filter(p=>p.is_keeper).length===1?'':'s'}</div>
+      </div>
+      <ul class="roster-list">${items}</ul>
+    </div>`;
+  }).join('');
+
+  el.innerHTML = `
+    <section class="block">
+      <div class="eyebrow">${DATA.current_season} Rosters</div>
+      <h2>Crew Manifests</h2>
+      <p class="lede">Every roster from this year's auction draft. Gold rows are kept players &mdash; the price shown already includes the K1&ndash;K4 keeper tax from the league constitution.</p>
+      <div class="roster-grid">${cards}</div>
+    </section>
+  `;
+}
+
+/* ---------------- Standings panel ---------------- */
+function renderStandings(){
+  const el = document.getElementById('panel-standings');
+  // Standings come from the live Sleeper pull when it succeeds, otherwise from
+  // the baked snapshot. Either way: wins/losses/ties/fpts/fpts_against per roster.
+  const teams = currentTeams();
+  const standings = currentStandings();
+  const teamIds = Object.keys(teams);
+  const rows = teamIds.map(id=>{
+    const s = standings[id] || {};
+    return {
+      id, team: teams[id],
+      wins: s.wins||0, losses: s.losses||0, ties: s.ties||0,
+      fpts: s.fpts||0, fpts_against: s.fpts_against||0
+    };
+  });
+  rows.sort((a,b)=> (b.wins-a.wins) || (b.fpts-a.fpts) || a.team.team_name.localeCompare(b.team.team_name));
+
+  const anyGamesPlayed = rows.some(r=>r.wins+r.losses+r.ties>0);
+
+  const trs = rows.map((r,i)=>{
+    const row = `
+    <tr>
+      <td class="num">${i+1}</td>
+      <td>${esc(r.team.team_name)}</td>
+      <td>${esc(r.team.manager)}</td>
+      <td class="num tabular">${r.wins}-${r.losses}${r.ties?('-'+r.ties):''}</td>
+      <td class="num tabular">${r.fpts.toFixed(1)}</td>
+      <td class="num tabular">${r.fpts_against.toFixed(1)}</td>
+    </tr>`;
+    // The Tamiki Cup takes the top 8; the bottom 4 sail into the Toilet Bowl.
+    const cut = (i === 7 && anyGamesPlayed)
+      ? `<tr class="cutline"><td colspan="6"><div class="cut-inner">Tamiki Cup cut line</div></td></tr>`
+      : '';
+    return row + cut;
+  }).join('');
+
+  const noteHtml = anyGamesPlayed
+    ? `<div class="standings-note">⚓ Pulled live from Sleeper each time this page loads. Top 8 make the Tamiki Cup.</div>`
+    : `<div class="standings-note">⚓ Preseason: Week 1 hasn't kicked off yet, so every team sits at 0&ndash;0. This page is refreshed from Sleeper on a schedule and will fill in as games are played.</div>`;
+
+  el.innerHTML = `
+    <section class="block">
+      <div class="eyebrow">${DATA.current_season} Regular Season</div>
+      <h2>Standings</h2>
+      <p class="lede">Pulled from the Pegleg Dynasty Sleeper league. Top 8 make the Tamiki Cup playoffs; the bottom 4 sail into the Will McKay Toilet Bowl.</p>
+      ${noteHtml}
+      <div class="card table-wrap">
+        <table>
+          <thead><tr><th>#</th><th>Team</th><th>Manager</th><th class="num">Record</th><th class="num">PF</th><th class="num">PA</th></tr></thead>
+          <tbody>${trs}</tbody>
+        </table>
+      </div>
+    </section>
+  `;
+}
+
+/* ---------------- Constitution TOC scroll-spy-lite ---------------- */
+function initConstitutionNav(){
+  document.querySelectorAll('.con-nav a').forEach(a=>{
+    a.addEventListener('click', e=>{
+      e.preventDefault();
+      const target = document.querySelector(a.getAttribute('href'));
+      if(target) target.scrollIntoView({behavior:'smooth', block:'start'});
+    });
+  });
+}
+
+/* ---------------- Boot ---------------- */
+renderHistory();
+renderRosters();
+renderStandings();
+initConstitutionNav();
+
+// Render the baked snapshot first (instant, works offline), then try Sleeper.
+const statusPill = document.getElementById('statusPill');
+if(statusPill){
+  statusPill.addEventListener('click', ()=>{ refreshLive(); });
+}
+refreshLive();
+</script>
+</body>
+</html>
