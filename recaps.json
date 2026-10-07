@@ -1,0 +1,132 @@
+{
+  "updated": "2026-10-07",
+  "recaps": [
+    {
+      "week": 4,
+      "published": "October 7, 2026",
+      "headline": "Two Undefeated, Six Tied, One Commissioner in Freefall",
+      "lede": "Four weeks in and the league has split into three tidy groups: two teams who can't lose, six teams who can't separate, and four teams already doing math. The middle group is the problem — half the league is 2-2, and the Tamiki Cup cut line runs straight through the center of it.",
+      "games": [
+        {
+          "winner": "TheNYFootballTeam", "winnerPts": 189.72,
+          "loser": "Mendes' Eyebrow", "loserPts": 91.36,
+          "tag": "Demolition of the week",
+          "blurb": "Ninety-eight points. Nassar is now averaging 160 a week and leads the league in scoring by more than fifty points, and he is somehow only 2-2 — he keeps posting monster numbers against the teams having their good weeks too. On the other side, the winningest manager in Pegleg history is in last place. Three Tamiki Cups on the shelf, 1-3 on the field, and the most points allowed in the league.",
+          "stat": "CeeDee Lamb 41.3 · Kenneth Walker 30.9 · Chuba Hubbard 25.9"
+        },
+        {
+          "winner": "FreeManan", "winnerPts": 174.68,
+          "loser": "Ridley me this", "loserPts": 82.22,
+          "tag": "Second demolition of the week",
+          "blurb": "The 2023 champions started 0-2 and have now won two straight by a combined 169 points. Nobody in this league is scoring more efficiently right now. Peter, meanwhile, is 2-2 and holding the eighth and final playoff seed by the thinnest of margins — he has been outscored by 113 points on the season and is somehow still in the bracket. Living entirely on schedule luck.",
+          "stat": "Kyren Williams 36.7 · Nico Collins 30.8 · Bijan Robinson 27.7"
+        },
+        {
+          "winner": "The Bushwackers", "winnerPts": 141.68,
+          "loser": "JD and Coke", "loserPts": 135.68,
+          "tag": "Finally",
+          "blurb": "Andrew gets his first win of the year, and he earned it the hard way — through three weeks he had been fed to whichever team happened to be hottest that week, absorbing the second-most points against in the league. Tetairoa McMillan went for 45.2, the highest individual score of the week. His tight end Kenyon Sadiq posted a zero, which at this point is less a disappointment than a tradition.",
+          "stat": "Tetairoa McMillan 45.2 · Drake Maye 26.2 · Alvin Kamara 22.8 (JDC)"
+        },
+        {
+          "winner": "KL2 Aspire", "winnerPts": 136.78,
+          "loser": "Matta's Lolita Express", "loserPts": 117.76,
+          "tag": "Undefeated",
+          "blurb": "Jesse is 4-0 and has never once appeared on the Tamiki Cup honor roll going back to 2008. No signature star, no 190-point explosion — just four straight weeks of putting up somewhere between 120 and 145 and letting everyone else blow up and implode in turn. Will and Fish drop to 1-3 two years after their 2021 title.",
+          "stat": "Ashton Jeanty 18.6 · Brock Purdy 19.6 · C.J. Stroud 21.5"
+        },
+        {
+          "winner": "Njigbas in Paris", "winnerPts": 126.76,
+          "loser": "Warren World All-Stars", "loserPts": 122.20,
+          "tag": "Still perfect",
+          "blurb": "Here is the best story in the league. Eddie owns the worst season in recorded Pegleg history — 3-11 back in 2022, the fewest wins anyone has ever managed. He is now 4-0 and in first place. Dave nearly caught him, and got a 27.7 redemption game from the $55 Puka Nacua who infamously posted a round zero in Week 2, but fell 4.56 short.",
+          "stat": "Javonte Williams 31.3 · Chase Brown 19.1 · Lamar Jackson 18.9"
+        },
+        {
+          "winner": "Settlers of Cottan", "winnerPts": 103.30,
+          "loser": "Gibbs + Perplexity", "loserPts": 101.12,
+          "tag": "Game of the week",
+          "blurb": "Two-point-one-eight points. The defending champion opened 0-2 and has now won two in a row to climb back to .500, and did it in the ugliest possible fashion — 103 points, with a $49 Saquon Barkley contributing 2.0 for the second time this season. Doug was 2-0 and leading the league in scoring a fortnight ago; he is now 2-2, having lost this one because Ladd McConkey put up a zero.",
+          "stat": "Tee Higgins 26.7 · Brock Bowers 20.6 · Ladd McConkey 0.0 (G+P)"
+        }
+      ],
+      "studs": [
+        { "name": "Tetairoa McMillan", "pts": 45.2, "team": "The Bushwackers" },
+        { "name": "CeeDee Lamb", "pts": 41.3, "team": "TheNYFootballTeam" },
+        { "name": "Kyren Williams", "pts": 36.7, "team": "FreeManan" },
+        { "name": "Javonte Williams", "pts": 31.3, "team": "Njigbas in Paris" },
+        { "name": "Kenneth Walker", "pts": 30.9, "team": "TheNYFootballTeam" },
+        { "name": "Nico Collins", "pts": 30.8, "team": "FreeManan" }
+      ],
+      "duds": [
+        { "name": "Kenyon Sadiq", "pts": 0.0, "team": "The Bushwackers", "note": "$1" },
+        { "name": "Ladd McConkey", "pts": 0.0, "team": "Gibbs + Perplexity", "note": "$29 — cost them the game" },
+        { "name": "Raiders D/ST", "pts": 1.0, "team": "JD and Coke" },
+        { "name": "Dalton Kincaid", "pts": 1.7, "team": "Ridley me this" },
+        { "name": "Saquon Barkley", "pts": 2.0, "team": "Settlers of Cottan", "note": "$49, again" },
+        { "name": "DJ Moore", "pts": 2.7, "team": "Njigbas in Paris" }
+      ],
+      "notes": [
+        "TheNYFootballTeam is averaging 160.5 points a week. Over a full 14-game regular season that projects to roughly 2,247 points — which would obliterate the all-time league record of 2,046.18 set by David Olesh in 2022.",
+        "Njigbas in Paris holds the record for the worst season in league history (3-11 in 2022). Four weeks into this one, Eddie is undefeated.",
+        "Six of twelve teams are 2-2. The difference between the 3rd seed and missing the playoffs entirely is currently 201 points of tiebreaker.",
+        "Mendes' Eyebrow has the fewest points scored (390.42) and the most points allowed (595.54) in the league. Both ends of the ledger, same team."
+      ],
+      "closing": "Ten weeks of regular season remain. Eight of twelve make the Tamiki Cup; the bottom four sail into the Will McKay Toilet Bowl, and the worst regular-season record hosts the draft party. Four teams are currently 1-3, and three of them have championship banners."
+    },
+    {
+      "week": 2,
+      "published": "September 22, 2026",
+      "headline": "The Champions' Reunion Happens at 0-2",
+      "lede": "Two weeks in, the league sorted itself into four undefeated, four at .500, and four in trouble — and the trouble bracket was stacked with former winners.",
+      "games": [
+        {
+          "winner": "TheNYFootballTeam", "winnerPts": 175.04,
+          "loser": "Matta's Lolita Express", "loserPts": 92.44,
+          "tag": "Season high",
+          "blurb": "The highest score anyone had posted all season, from the one manager whose name doesn't appear anywhere on the honor roll going back to 2008. He also quietly stopped starting his own defense against his own quarterback, which helped.",
+          "stat": "Davante Adams 39.5 · CeeDee Lamb 35.3 · Dak Prescott 29.76"
+        },
+        {
+          "winner": "Gibbs + Perplexity", "winnerPts": 152.50,
+          "loser": "Warren World All-Stars", "loserPts": 75.80,
+          "tag": "Superflex math",
+          "blurb": "Doug got 69.8 points from two quarterback slots, which was roughly Dave's entire roster. Dave holds the all-time single-season scoring record (2,046.18 in 2022) and posted 75.8 with a $55 Puka Nacua contributing exactly zero.",
+          "stat": "Josh Allen 40.82 · Patrick Mahomes 28.98"
+        },
+        {
+          "winner": "KL2 Aspire", "winnerPts": 143.50,
+          "loser": "FreeManan", "loserPts": 128.48,
+          "tag": "",
+          "blurb": "The 2023 champions scored a perfectly respectable 128 and lost anyway, which is the most infuriating way to start a season.",
+          "stat": "Amon-Ra St. Brown 35.2 · Brock Purdy 28.48"
+        },
+        {
+          "winner": "Ridley me this", "winnerPts": 143.70,
+          "loser": "JD and Coke", "loserPts": 129.70,
+          "tag": "",
+          "blurb": "Peter moved to 2-0 on depth rather than stars, and remained a man whose team is named 'Ridley me this' while rostering no Ridley whatsoever.",
+          "stat": "Jonathan Taylor 29.2 · DeVonta Smith 27.7"
+        },
+        {
+          "winner": "Njigbas in Paris", "winnerPts": 117.76,
+          "loser": "The Bushwackers", "loserPts": 108.82,
+          "tag": "Keeper of the year",
+          "blurb": "Jaxon Smith-Njigba went for 42.5 — the best individual performance of the week — for the team literally named after him, kept at K2 for sixteen dollars. That is the entire point of a keeper league.",
+          "stat": "Jaxon Smith-Njigba 42.5"
+        },
+        {
+          "winner": "Mendes' Eyebrow", "winnerPts": 109.72,
+          "loser": "Settlers of Cottan", "loserPts": 101.50,
+          "tag": "Game of the week",
+          "blurb": "The tightest game of the week and a loaded one historically: the league's winningest manager against the defending champion. Rich got 3.0 points from a $49 Saquon Barkley and fell to 0-2.",
+          "stat": "De'Von Achane 12.3 · Garrett Wilson 16.7"
+        }
+      ],
+      "studs": [],
+      "duds": [],
+      "notes": [],
+      "closing": "The 0-2 group was essentially a champions' reunion — the 2025 winner, the 2023 winners, and a two-time champ who owns the scoring record — while half the undefeated teams had never won anything."
+    }
+  ]
+}
