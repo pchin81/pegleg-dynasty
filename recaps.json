@@ -1,6 +1,146 @@
 {
-  "updated": "2026-10-13",
+  "updated": "2026-10-20",
   "recaps": [
+    {
+      "week": 6,
+      "published": "October 20, 2026",
+      "headline": "Nobody's Perfect, and the League's Second-Best Offense Is Ninth",
+      "lede": "The last unbeaten record fell on Sunday. But the real story is a line in the standings that should probably be illegal: Doug has scored more points than every team in this league except one, and he is sitting ninth — outside the bracket, looking up at a team he has outscored by more than two hundred points.",
+      "games": [
+        {
+          "winner": "JD and Coke",
+          "winnerPts": 142.38,
+          "loser": "Njigbas in Paris",
+          "loserPts": 127.66,
+          "tag": "The last unbeaten falls",
+          "blurb": "Serge and Vlad ended it. Christian McCaffrey — their keeper, kept at forty-three dollars — went for 30.7 and the perfect record is gone. Eddie did plenty right: 27.34 from Trevor Lawrence, 25.4 from Jaxon Smith-Njigba, 23.0 from Chris Olave. It simply was not enough, and for the first time since Week 1 there is nobody in this league without a loss. He keeps the top seed at 5-1 on points, so the damage is cosmetic for now.",
+          "stat": "Christian McCaffrey 30.7 · Matthew Stafford 16.88 · Chris Olave 23.0 (NiP)"
+        },
+        {
+          "winner": "TheNYFootballTeam",
+          "winnerPts": 142.28,
+          "loser": "Gibbs + Perplexity",
+          "loserPts": 125.68,
+          "tag": "Cruel and unusual",
+          "blurb": "Nassar moves to 4-2 and leads the league with 903.46 points, a pace that still projects past the all-time record. But look at the other side of this one, because it is the defining injustice of the season. Doug has scored 838.82 points — second-most in the entire league — and he is 2-4 and ninth. He has outscored David's Warren World All-Stars by 201 points. David is eighth and in the playoff bracket. Doug is ninth and out. Six weeks of posting enormous numbers against whoever happens to be peaking that week.",
+          "stat": "Kenneth Walker 27.9 · Isaiah Likely 23.9 · Tre Tucker 26.7 (G+P)"
+        },
+        {
+          "winner": "Warren World All-Stars",
+          "winnerPts": 92.12,
+          "loser": "Settlers of Cottan",
+          "loserPts": 90.8,
+          "tag": "Closest game of the season",
+          "blurb": "One point and thirty-two hundredths. David wins the tightest game anyone has played this year, and that margin is precisely the difference between holding the final playoff seat and sitting outside it — he is eighth by virtue of this result and nothing else. He did it while starting Darren Waller, who scored zero. Rich drops to 2-4 and tenth, and the defending champions are now in genuine trouble.",
+          "stat": "Puka Nacua 14.0 · Zay Flowers 12.7 · Jordan Love 20.24 (SoC)"
+        },
+        {
+          "winner": "Matta's Lolita Express",
+          "winnerPts": 139.04,
+          "loser": "Ridley me this",
+          "loserPts": 95.96,
+          "tag": "The Shough redemption",
+          "blurb": "Last week Will and Fish started Tyler Shough, their six-dollar keeper, and watched him score negative 0.16. This week he put up 26.96. Add 28.5 from Malik Nabers and they are 3-3 and sixth, very much alive. Peter falls to 2-4 and has now conceded 811.98 points — second-most in the league — which is a tough way to lose a season. Germie Bernard's 25.7 was the lone bright spot.",
+          "stat": "Malik Nabers 28.5 · Tyler Shough 26.96 · Germie Bernard 25.7 (RmT)"
+        },
+        {
+          "winner": "The Bushwackers",
+          "winnerPts": 116.0,
+          "loser": "FreeManan",
+          "loserPts": 81.78,
+          "tag": "Freefall",
+          "blurb": "Freeman and Manan had won three in a row and were sitting fourth. They posted 81.78 — their worst of the season by some distance — got a zero out of Juwan Johnson, and dropped back into the 3-3 scrum. Andrew keeps climbing: three wins in four weeks, up to seventh, and his tight end Kenyon Sadiq managed 2.2, which for Sadiq counts as a productive afternoon.",
+          "stat": "James Cook 24.3 · Drake Maye 23.8 · Braelon Allen 23.1"
+        },
+        {
+          "winner": "KL2 Aspire",
+          "winnerPts": 117.0,
+          "loser": "Mendes' Eyebrow",
+          "loserPts": 80.86,
+          "tag": "The bottom",
+          "blurb": "Jesse moves to 5-1 and second, quietly assembling the least dramatic excellent season imaginable. Paul and Nick put up 80.86 — the lowest score of the week — and fall to 1-5. They have been outscored by 256.88 points on the year and have surrendered 854.62, the most in the league by a margin of forty-three. Three Tamiki Cups between them and the Biggest Loser Consequence is currently theirs to lose.",
+          "stat": "Brock Purdy 17.36 · C.J. Stroud 19.84 · Jayden Daniels 21.0 (ME)"
+        }
+      ],
+      "studs": [
+        {
+          "name": "Christian McCaffrey",
+          "pts": 30.7,
+          "team": "JD and Coke",
+          "note": "keeper, $43"
+        },
+        {
+          "name": "Malik Nabers",
+          "pts": 28.5,
+          "team": "Matta's Lolita Express"
+        },
+        {
+          "name": "Kenneth Walker",
+          "pts": 27.9,
+          "team": "TheNYFootballTeam"
+        },
+        {
+          "name": "Trevor Lawrence",
+          "pts": 27.34,
+          "team": "Njigbas in Paris",
+          "note": "in a loss"
+        },
+        {
+          "name": "Tyler Shough",
+          "pts": 26.96,
+          "team": "Matta's Lolita Express",
+          "note": "$6 keeper, up from -0.16"
+        },
+        {
+          "name": "Tre Tucker",
+          "pts": 26.7,
+          "team": "Gibbs + Perplexity",
+          "note": "in a loss"
+        }
+      ],
+      "duds": [
+        {
+          "name": "Darren Waller",
+          "pts": 0.0,
+          "team": "Warren World All-Stars",
+          "note": "won anyway, by 1.32"
+        },
+        {
+          "name": "Juwan Johnson",
+          "pts": 0.0,
+          "team": "FreeManan"
+        },
+        {
+          "name": "Texans D/ST",
+          "pts": 0.0,
+          "team": "KL2 Aspire"
+        },
+        {
+          "name": "MarShawn Lloyd",
+          "pts": 1.0,
+          "team": "Ridley me this"
+        },
+        {
+          "name": "Mark Andrews",
+          "pts": 1.4,
+          "team": "Njigbas in Paris"
+        },
+        {
+          "name": "Kenyon Sadiq",
+          "pts": 2.2,
+          "team": "The Bushwackers",
+          "note": "a season best"
+        }
+      ],
+      "notes": [
+        "Gibbs + Perplexity has the second-most points in the league and sits ninth. The team holding the final playoff seat has scored 201.42 fewer points.",
+        "Five teams are 3-3, filling seeds four through eight. Three teams are 2-4, filling nine through eleven.",
+        "TheNYFootballTeam leads the league at 903.46 points — a pace of roughly 2,108 over a full season, still clear of the all-time record of 2,046.18.",
+        "Mendes' Eyebrow has the fewest points for and the most points against, and the gap between those two columns is 256.88.",
+        "Kenyon Sadiq has now started three straight weeks for The Bushwackers, scoring 0.0, 0.3 and 2.2. Andrew has won two of those three."
+      ],
+      "closing": "Eight weeks of regular season remain. Five teams sit at 3-3 scrapping over the last seats, and the second-highest-scoring team in the league has to climb over all of them to get in. The worst regular-season record hosts the draft party."
+    },
     {
       "week": 5,
       "published": "October 13, 2026",
@@ -49,7 +189,7 @@
           "loser": "Mendes' Eyebrow",
           "loserPts": 126.46,
           "tag": "Winning ugly",
-          "blurb": "Will and Fish started Tyler Shough, their six-dollar keeper, who scored negative 0.16 — and they won by fifteen anyway on the back of Malik Nabers and a vintage Jameis Winston afternoon. On the other side, Paul put up 126.46, which is a perfectly decent score, and lost. He is now 1-4 and alone in last place with the fewest points scored and the most points allowed in the league. Both ends of the ledger, same team, four straight losses. The man has three Tamiki Cups.",
+          "blurb": "Will and Fish started Tyler Shough, their six-dollar keeper, who scored negative 0.16 — and they won by fifteen anyway on the back of Malik Nabers and a vintage Jameis Winston afternoon. On the other side, Paul and Nick put up 126.46, which is a perfectly decent score, and lost. They are now 1-4 and alone in last place with the fewest points scored and the most points allowed in the league. Both ends of the ledger, same team, four straight losses. The man has three Tamiki Cups.",
           "stat": "Malik Nabers 29.1 · Jameis Winston 25.74 · Derrick Henry 21.0"
         },
         {
