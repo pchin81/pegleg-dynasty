@@ -1,6 +1,237 @@
 {
-  "updated": "2026-11-03",
+  "updated": "2026-11-10",
   "recaps": [
+    {
+      "week": 9,
+      "published": "November 10, 2026",
+      "headline": "Doug Finally Gets In, by Scoring Eighty-Nine",
+      "lede": "For six weeks Gibbs + Perplexity has been the highest-scoring team outside the playoff bracket, a running injustice this column has documented at length. On Sunday Doug broke in — by posting 89.64, the second-lowest score of his season, with a $29 Ladd McConkey contributing nothing at all, against the only team in the league having a worse afternoon. He is the sixth seed. Somewhere there is a lesson about variance, and it is not a comforting one.",
+      "games": [
+        {
+          "winner": "TheNYFootballTeam",
+          "winnerPts": 181.04,
+          "loser": "JD and Coke",
+          "loserPts": 116.28,
+          "tag": "Back on record pace",
+          "blurb": "Kenneth Walker 36.3, CeeDee Lamb 33.5, Joe Burrow 29.54, and a 49ers defense that chipped in 22.0 — Nassar put up 181.04, the third-highest score anyone has managed this season, and he owns two of the other top three as well. He is at 1,338.34 points for the year, 154.02 clear of second place, which projects to 2,081.86 and puts him back above David Olesh's record of 2,046.18 for the first time since Week 6. Serge and Vlad scored 116.28, which was respectable and entirely beside the point.",
+          "stat": "Kenneth Walker 36.3 · CeeDee Lamb 33.5 · Christian McCaffrey 22.7 (JDC)"
+        },
+        {
+          "winner": "The Bushwackers",
+          "winnerPts": 150.94,
+          "loser": "KL2 Aspire",
+          "loserPts": 115.52,
+          "tag": "Six in a row",
+          "blurb": "Andrew started this season 0-3. He has now won six straight and is the third seed. Ja'Marr Chase went for 31.5, Bucky Irving 28.5, and even Juwan Johnson turned up with 11.4 at tight end, which in this league passes for a miracle. Jesse's bounce-back from last week's 70.86 was a perfectly fine 115.52 built on two quarterbacks — Brock Purdy 25.28 and Bryce Young 20.34 — and it was not close. KL2 is 6-3 and fourth with a point differential of minus 4.14, the only team in the top six underwater.",
+          "stat": "Ja'Marr Chase 31.5 · Bucky Irving 28.5 · Brock Purdy 25.28 (KL2)"
+        },
+        {
+          "winner": "Settlers of Cottan",
+          "winnerPts": 138.88,
+          "loser": "FreeManan",
+          "loserPts": 98.9,
+          "tag": "Two straight for the champ",
+          "blurb": "Jordan Love went for 36.18 and Rich has now won two in a row, climbing to 4-5 and within a tiebreaker of the bracket. Brock Bowers added 22.3 and Tee Higgins 20.2. Freeman and Manan got 26.7 from Bijan Robinson and very little else — they have now scored under 111 in each of their last four weeks, and they are holding the eighth and final playoff seat by reputation and points-for rather than by form.",
+          "stat": "Jordan Love 36.18 · Brock Bowers 22.3 · Bijan Robinson 26.7 (FM)"
+        },
+        {
+          "winner": "Matta's Lolita Express",
+          "winnerPts": 107.98,
+          "loser": "Warren World All-Stars",
+          "loserPts": 90.52,
+          "tag": "Two players and a void",
+          "blurb": "David got 35.0 from Puka Nacua and 30.1 from Christian Watson — 65.1 points from two men — and 25.42 from the other seven starters combined. Josh Jacobs managed 0.5, Adonai Mitchell 0.0, Tucker Kraft 1.9. He falls to 4-5 and out of the bracket for the first time in weeks. Will and Fish won it with the cheap end again: Tyler Shough, their $6 keeper, 19.7, and a one-dollar Jonah Coleman 18.8, while the $47 Justin Jefferson managed 8.8 and the $36 Derrick Henry 5.58. They are fifth at 5-4.",
+          "stat": "Luther Burden 20.7 · Tyler Shough 19.7 · Puka Nacua 35.0 (WW)"
+        },
+        {
+          "winner": "Njigbas in Paris",
+          "winnerPts": 111.08,
+          "loser": "Ridley me this",
+          "loserPts": 106.28,
+          "tag": "Best record in the league",
+          "blurb": "Matthew Golden, a waiver pickup, scored 32.4. Everybody else on Eddie's roster scored 22.4 or less, D'Andre Swift managed 3.1 and Mike Gesicki 3.1, and it was still enough by 4.80. He is 7-2 and alone in first. Peter's Jaguars defense was his fourth-best starter, the $44 Jonathan Taylor produced 9.4 after 6.7 the week before, and Ridley me this falls to 2-7.",
+          "stat": "Matthew Golden 32.4 · Javonte Williams 22.4 · Rome Odunze 16.0 (RmT)"
+        },
+        {
+          "winner": "Gibbs + Perplexity",
+          "winnerPts": 89.64,
+          "loser": "Mendes' Eyebrow",
+          "loserPts": 88.44,
+          "tag": "The breakthrough",
+          "blurb": "One point and two tenths, in a game neither team especially deserved to win. Doug's $29 Ladd McConkey scored 0.00, his $61 Josh Allen scored 12.86, and his 89.64 was the second-lowest total he has posted all year — and it was enough, because Paul and Nick put up 88.44 with the $16 Jaylen Waddle at 3.2 and Jameson Williams at 5.0. Six weeks of leading the league in points while sitting outside the playoffs ended here, in the ugliest game of the week. Gibbs + Perplexity is the sixth seed. Mendes' Eyebrow is 2-7.",
+          "stat": "Patrick Mahomes 16.48 · Jahmyr Gibbs 13.4 · Denzel Boston 15.8 (ME)"
+        }
+      ],
+      "studs": [
+        {
+          "name": "Kenneth Walker",
+          "pts": 36.3,
+          "team": "TheNYFootballTeam",
+          "note": "$31"
+        },
+        {
+          "name": "Jordan Love",
+          "pts": 36.18,
+          "team": "Settlers of Cottan",
+          "note": "$28"
+        },
+        {
+          "name": "Puka Nacua",
+          "pts": 35.0,
+          "team": "Warren World All-Stars",
+          "note": "$55, in a loss"
+        },
+        {
+          "name": "CeeDee Lamb",
+          "pts": 33.5,
+          "team": "TheNYFootballTeam",
+          "note": "$46"
+        },
+        {
+          "name": "Matthew Golden",
+          "pts": 32.4,
+          "team": "Njigbas in Paris",
+          "note": "waiver pickup"
+        },
+        {
+          "name": "Ja'Marr Chase",
+          "pts": 31.5,
+          "team": "The Bushwackers",
+          "note": "$61"
+        }
+      ],
+      "duds": [
+        {
+          "name": "Ladd McConkey",
+          "pts": 0.0,
+          "team": "Gibbs + Perplexity",
+          "note": "$29 — won anyway"
+        },
+        {
+          "name": "Adonai Mitchell",
+          "pts": 0.0,
+          "team": "Warren World All-Stars"
+        },
+        {
+          "name": "Josh Jacobs",
+          "pts": 0.5,
+          "team": "Warren World All-Stars",
+          "note": "$21"
+        },
+        {
+          "name": "Tucker Kraft",
+          "pts": 1.9,
+          "team": "Warren World All-Stars",
+          "note": "$8"
+        },
+        {
+          "name": "D'Andre Swift",
+          "pts": 3.1,
+          "team": "Njigbas in Paris",
+          "note": "$8, won anyway"
+        },
+        {
+          "name": "Jaylen Waddle",
+          "pts": 3.2,
+          "team": "Mendes' Eyebrow",
+          "note": "K1 keeper, $16"
+        }
+      ],
+      "notes": [
+        "Gibbs + Perplexity spent six weeks as the highest-scoring team outside the playoff bracket. Doug broke in by winning 89.64 to 88.44 — his second-lowest score of the season — with a $29 Ladd McConkey at 0.00.",
+        "TheNYFootballTeam is at 1,338.34 points, 154.02 clear of second place. The pace of 2,081.86 is above David Olesh's record of 2,046.18 for the first time since Week 6.",
+        "Five teams are 4-5, filling seeds six through ten. The gap between the eighth seed and the tenth is 134.72 points of pure tiebreaker.",
+        "Gibbs + Perplexity over Mendes' Eyebrow by 1.20 was the third-closest game of the season, behind the 0.92 in Week 8 and the 1.00 in Week 3.",
+        "The Bushwackers started 0-3 and have won six in a row.",
+        "Mendes' Eyebrow and Ridley me this are both 2-7, with the two worst point differentials in the league. One of them hosts the draft party."
+      ],
+      "market": {
+        "title": "Buyers & Sellers",
+        "deadline": "Two weeks left · deadline is end of Week 11",
+        "intro": "Five regular-season games remain and the trade window closes after Week 11, which means Weeks 10 and 11 and then it is shut. The market has collapsed into its final shape: two teams are genuinely out of it, five teams are tied at 4-5 and none of them will admit they are out of it, and the five teams above them all have reasons to spend. If you are going to do something, it is now.",
+        "labels": {
+          "mkt-buy": "Seeded and playing for January",
+          "mkt-sell": "Playing for next season",
+          "mkt-hold": "All 4-5, all convinced"
+        },
+        "buyers": [
+          {
+            "team": "Njigbas in Paris",
+            "record": "7-2 · 1184.32",
+            "note": "Best record in the league, and he got there on 32.4 from a waiver pickup while D'Andre Swift managed 3.1. Eddie's roster is held together with free agents and it keeps working. One real piece and the top seed is his to lose."
+          },
+          {
+            "team": "TheNYFootballTeam",
+            "record": "6-3 · 1338.34",
+            "note": "154.02 points clear of second and back above the all-time record pace. Both keeper slots are still open from a draft where he kept nobody, so Nassar remains the one manager here who can take on anything at no offseason cost. There is no reason for him not to."
+          },
+          {
+            "team": "The Bushwackers",
+            "record": "6-3 · 1149.92",
+            "note": "Six straight wins from an 0-3 start, third seed, and both keeper slots already spent. Every deal Andrew makes is a pure rental — which is precisely the right instrument for a team this hot with five games left."
+          },
+          {
+            "team": "KL2 Aspire",
+            "record": "6-3 · 1090.18",
+            "note": "A week after the 70.86 he is 6-3 and fourth, with a point differential of minus 4.14 — the only team in the top six that has been outscored. Jesse is winning on schedule luck and he is smart enough to know it will not hold."
+          },
+          {
+            "team": "Matta's Lolita Express",
+            "record": "5-4 · 1086.52",
+            "note": "Fifth seed, and a month of winning off the bottom of the roster: $6 Tyler Shough 19.7 and a one-dollar Jonah Coleman 18.8, while $83 of Justin Jefferson and Derrick Henry produced 14.38. The expensive end is still a real asset to somebody."
+          }
+        ],
+        "sellers": [
+          {
+            "team": "Mendes' Eyebrow",
+            "record": "2-7 · 910.80",
+            "note": "1,190.02 points allowed, still the most in the league, and still the fewest scored. Two weeks to turn De'Von Achane — a K3 at $36 whose fourth year costs $76 and who cannot be kept a fifth — into something that matters in March. Paul and Nick have nothing left to play for this season and the most valuable expiring asset on the board."
+          },
+          {
+            "team": "Ridley me this",
+            "record": "2-7 · 948.38",
+            "note": "Lost by 4.80 in a game where his Jaguars defense was the fourth-best starter he had. The $44 Jonathan Taylor has gone 6.7 and then 9.4 in consecutive weeks. Peter is tied with Paul and Nick at 2-7, and the loser of that race hosts the draft party — which is its own argument for selling the present and buying the future."
+          }
+        ],
+        "fence": [
+          {
+            "team": "Gibbs + Perplexity",
+            "record": "4-5 · 1177.84",
+            "note": "In, finally, at sixth, with the third-most points in the league and a +165.54 differential that dwarfs everyone around him. Doug has the profile of a team that should buy and the record of a team that should think about it."
+          },
+          {
+            "team": "JD and Coke",
+            "record": "4-5 · 1144.74",
+            "note": "Seventh, and carrying 1,204.14 points against — the most in the league. Serge and Vlad have been outscored by 59.40 on the season and are still inside the bracket, which is what happens when five teams finish in a knot."
+          },
+          {
+            "team": "FreeManan",
+            "record": "4-5 · 1134.34",
+            "note": "Holding the final seat for a third straight week on points-for. The 2023 champions have scored under 111 in each of their last four, and Bijan Robinson at $60 cannot keep carrying it alone."
+          },
+          {
+            "team": "Settlers of Cottan",
+            "record": "4-5 · 1075.22",
+            "note": "Two straight wins and 36.18 from Jordan Love. Rich is ninth and out by tiebreaker only, which a single week erases. The cupboard of $5-tax keeper rights that made him the richest seller in October is still sitting there if this turns again."
+          },
+          {
+            "team": "Warren World All-Stars",
+            "record": "4-5 · 999.62",
+            "note": "Two players produced 65.1 and the other seven produced 25.42. David has dropped to tenth, out of the bracket, and is the only 4-5 team still under a thousand points. The floor that won him games in October has stopped showing up."
+          }
+        ],
+        "rulesTitle": "Two weeks left — the rules that matter",
+        "rules": [
+          "Trades of players and future draft dollars close at the end of Week 11. That is two more weeks, Weeks 10 and 11. There are no vetoes in this league, and the Commissioner logs every trade that moves draft dollars.",
+          "You may keep a maximum of two players off your final roster. Everything else re-enters the auction, so a third keeper-worthy player is an asset with an expiration date — and the date is getting close.",
+          "Draft dollars move in a narrow band: no team may enter the draft with more than $225 or less than $175. That is $25 either side of the standard $200 budget, so you can bring in at most $25 and ship out at most $25. The entire currency is twenty-five dollars.",
+          "Keeper tax compounds on last year's price: +$5 the first year kept, +$10 the second, +$20 the third, +$40 the fourth. Nobody can be kept a fifth year, which is worth checking before you pay up for somebody else's K3.",
+          "No team may hold more than two keepers entering the draft — unrestricted, restricted, or any mix. Trading for a third set of keeper rights does not raise that ceiling."
+        ],
+        "rulesSource": "Full text on the Constitution tab, under In-Season Rules and Off-Season & Keepers."
+      },
+      "closing": "Five regular-season games left and two weeks to trade. The top five are set and spending; the bottom two are done and should be selling; and in between sit five teams at 4-5 separated by 178.22 points of tiebreaker, all of whom believe they are one good Sunday from the bracket. Three of them are right. The worst regular-season record hosts the draft party, and after Sunday that is a straight race between the two teams who played the best game of the season a week ago."
+    },
     {
       "week": 8,
       "published": "November 3, 2026",
@@ -22,7 +253,7 @@
           "loser": "Ridley me this",
           "loserPts": 114.26,
           "tag": "Closest game of the season",
-          "blurb": "Nine tenths of a point. Paul and Nick win the tightest game anyone has played this year — under the 1.00 Jesse squeaked by with in Week 3, under David's 1.32 in Week 6 — and they got there on 23.3 from Braelon Allen, a waiver pickup. Peter's leading starter was his Jaguars defense at 23.0, which is the sort of detail that explains a 2-6 record all by itself. He has now conceded 1,051.99 points. These are the two teams at the bottom of the table, and they played the best game of the year.",
+          "blurb": "Nine tenths of a point. Paul and Nick win the tightest game anyone has played this year — under the 1.00 Jesse squeaked by with in Week 3, under David's 1.32 in Week 6 — and they got there on 23.3 from Braelon Allen, a waiver pickup. Peter's leading starter was his Jaguars defense at 23.0, which is the sort of detail that explains a 2-6 record all by itself. He has now conceded 1,052.00 points. These are the two teams at the bottom of the table, and they played the best game of the year.",
           "stat": "Braelon Allen 23.3 · Jameson Williams 17.0 · Jaguars D/ST 23.0 (RmT)"
         },
         {
@@ -262,7 +493,7 @@
           "loser": "Ridley me this",
           "loserPts": 93.62,
           "tag": "Quietly 6-1",
-          "blurb": "Jesse has won six of seven and did this one without a single starter breaking 25 points — Amon-Ra St. Brown 24.2, Ashton Jeanty 21.6, and a steady middle that never dipped. It is the least dramatic excellent season imaginable and it owns the best point differential in the league at +122.62. Peter got 26.28 from Bo Nix and essentially nothing after that; 93.62 drops him to 2-5 with 936.81 points allowed, second-most in the league. Still, famously, no Ridley.",
+          "blurb": "Jesse has won six of seven and did this one without a single starter breaking 25 points — Amon-Ra St. Brown 24.2, Ashton Jeanty 21.6, and a steady middle that never dipped. It is the least dramatic excellent season imaginable and it owns the best point differential in the league at +122.62. Peter got 26.28 from Bo Nix and essentially nothing after that; 93.62 drops him to 2-5 with 936.82 points allowed, second-most in the league. Still, famously, no Ridley.",
           "stat": "Amon-Ra St. Brown 24.2 · Ashton Jeanty 21.6 · Bo Nix 26.28 (RmT)"
         },
         {
@@ -431,7 +662,7 @@
           {
             "team": "Ridley me this",
             "record": "2-5 · 727.84",
-            "note": "727.84 scored, 936.81 allowed — the second-worst offense and the second-worst luck at the same time. Jonathan Taylor at $44 and Justin Herbert at $37 are the sort of names that move a deadline."
+            "note": "727.84 scored, 936.82 allowed — the second-worst offense and the second-worst luck at the same time. Jonathan Taylor at $44 and Justin Herbert at $37 are the sort of names that move a deadline."
           }
         ],
         "fence": [

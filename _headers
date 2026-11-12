@@ -1,0 +1,5 @@
+/*
+  Cache-Control: public, max-age=0, must-revalidate
+
+/recaps.json
+  Cache-Control: no-cache
