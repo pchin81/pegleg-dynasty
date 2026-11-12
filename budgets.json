@@ -1,0 +1,27 @@
+{
+  "season": 2027,
+  "updated": "2026-11-12",
+  "base": 200,
+  "floor": 175,
+  "ceiling": 225,
+  "keeperSlots": 2,
+  "note": "Budgets are computed from the trades below, so the ledger and the numbers can never disagree. Add a trade and both update. Constitution: no team enters the draft with more than $225 or less than $175, and nobody holds more than two keepers.",
+  "trades": [
+    {
+      "week": 10,
+      "date": "2026-11-11",
+      "dollars": 10,
+      "to": "Mendes' Eyebrow",
+      "from": "TheNYFootballTeam",
+      "players": [
+        {
+          "name": "Jameson Williams",
+          "from": "Mendes' Eyebrow",
+          "to": "TheNYFootballTeam"
+        }
+      ],
+      "slots": 0,
+      "note": ""
+    }
+  ]
+}

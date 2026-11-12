@@ -3,3 +3,6 @@
 
 /recaps.json
   Cache-Control: no-cache
+
+/budgets.json
+  Cache-Control: no-cache
