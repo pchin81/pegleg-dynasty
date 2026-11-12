@@ -5,19 +5,35 @@
   "floor": 175,
   "ceiling": 225,
   "keeperSlots": 2,
-  "note": "Budgets are computed from the trades below, so the ledger and the numbers can never disagree. Add a trade and both update. Constitution: no team enters the draft with more than $225 or less than $175, and nobody holds more than two keepers.",
+  "note": "Trades are keyed by ROSTER ID, not team name, because managers rename teams mid-season and a renamed team would silently stop matching. Roster ids never change. The names below are only labels for you reading this file -- the site always shows each team's current Sleeper name. Budgets are computed from this list, so the ledger and the numbers can never disagree. Constitution: nobody enters the draft above $225 or below $175, and nobody holds more than two keepers.",
+  "rosterIds": {
+    "1": "pchin81 & nickox",
+    "2": "dolesh2",
+    "3": "rhlee13",
+    "4": "RoofKorean",
+    "5": "andrewhwang07",
+    "6": "Dougisme",
+    "7": "eduke87",
+    "8": "ChickenFriedFantasy & ChokeNoJoke",
+    "9": "jmelgares",
+    "10": "axesup & SofaKingdum",
+    "11": "Wdanders888 & jfishner",
+    "12": "TheNYFootballTeam"
+  },
   "trades": [
     {
       "week": 10,
       "date": "2026-11-11",
       "dollars": 10,
-      "to": "Mendes' Eyebrow",
-      "from": "TheNYFootballTeam",
+      "to": "1",
+      "from": "12",
+      "toLabel": "pchin81 & nickox",
+      "fromLabel": "TheNYFootballTeam",
       "players": [
         {
           "name": "Jameson Williams",
-          "from": "Mendes' Eyebrow",
-          "to": "TheNYFootballTeam"
+          "from": "1",
+          "to": "12"
         }
       ],
       "slots": 0,
