@@ -1,6 +1,6 @@
 {
   "season": 2027,
-  "updated": "2026-11-12",
+  "updated": "2026-11-13",
   "base": 200,
   "floor": 175,
   "ceiling": 225,
@@ -36,6 +36,29 @@
           "to": "12"
         }
       ],
+      "slots": 0,
+      "note": ""
+    },
+    {
+      "week": 10,
+      "date": "2026-11-13",
+      "dollars": 10,
+      "to": "1",
+      "from": "7",
+      "toLabel": "pchin81 & nickox",
+      "fromLabel": "eduke87",
+      "players": [
+        {
+          "name": "Jayden Daniels",
+          "from": "1",
+          "to": "7"
+        }
+      ],
+      "faab": {
+        "amount": 10,
+        "from": "1",
+        "to": "7"
+      },
       "slots": 0,
       "note": ""
     }
