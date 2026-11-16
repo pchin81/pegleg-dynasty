@@ -1,6 +1,6 @@
 {
   "season": 2027,
-  "updated": "2026-11-14",
+  "updated": "2026-11-16",
   "base": 200,
   "floor": 175,
   "ceiling": 225,
@@ -79,6 +79,29 @@
         {
           "name": "Jonathan Taylor",
           "from": "4",
+          "to": "9"
+        }
+      ],
+      "slots": 0,
+      "note": ""
+    },
+    {
+      "week": 10,
+      "date": "2026-11-16",
+      "dollars": 10,
+      "to": "2",
+      "from": "9",
+      "toLabel": "dolesh2",
+      "fromLabel": "jmelgares",
+      "players": [
+        {
+          "name": "Chris Godwin",
+          "from": "9",
+          "to": "2"
+        },
+        {
+          "name": "Puka Nacua",
+          "from": "2",
           "to": "9"
         }
       ],
