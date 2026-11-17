@@ -229,7 +229,59 @@
         ],
         "rulesSource": "Full text on the Constitution tab, under In-Season Rules and Off-Season & Keepers."
       },
-      "closing": "Four regular-season games left and one week to trade. Eddie is a game clear, Nassar is scoring like nobody in the history of this league and sitting second, Andrew has won seven straight from an 0-3 start, and the last playoff seat belongs to a 4-6 team with the seventh-most points. After Sunday the window shuts and everybody lives with the roster they have. The worst regular-season record hosts the draft party, and that is down to two teams at 2-8 separated by 61 points of scoring."
+      "closing": "Four regular-season games left and one week to trade. Eddie is a game clear, Nassar is scoring like nobody in the history of this league and sitting second, Andrew has won seven straight from an 0-3 start, and the last playoff seat belongs to a 4-6 team with the seventh-most points. After Sunday the window shuts and everybody lives with the roster they have. The worst regular-season record hosts the draft party, and that is down to two teams at 2-8 separated by 61 points of scoring.",
+      "primer": {
+        "title": "Trade Deadline Primer",
+        "kicker": "One week left · window shuts after Week 11",
+        "intro": "Five deals, forty-three dollars of next year's budget and eleven players have already changed hands, and seven of the twelve teams have been involved. Everything below is computed from the Commissioner's ledger, including the part most people get wrong at a deadline: what the constitution will actually let you do. The $175–$225 band is a hard wall, and two managers have already hit it or come close.",
+        "stillBuying": [
+          {
+            "team": "7",
+            "note": "Best record in the league, $35 of room, and the fewest excuses. If Eddie wants to close this out he has the capacity to do it."
+          },
+          {
+            "team": "12",
+            "note": "Scoring like nobody in league history, still the second seed, $35 of room and both keeper slots open from a draft where he kept nobody. Nassar can absorb anything."
+          },
+          {
+            "team": "6",
+            "note": "Second-most points, a .500 record, and completely untouched at $200 with the full $25 either way. Doug has the most unused flexibility of any contender."
+          },
+          {
+            "team": "10",
+            "note": "Fourth-most points and sixth seed, untouched at $200. Serge and Vlad have not made a move all year."
+          }
+        ],
+        "stillSelling": [
+          {
+            "team": "4",
+            "note": "2-8 with the most points against in the league. Peter bought once already, taking $8 and C.J. Stroud from Jesse; at $208 he still has $33 to send the other way and nothing left to play for."
+          },
+          {
+            "team": "2",
+            "note": "Tenth at 4-6 and coming off the second-lowest score of the season. David has already sold Puka Nacua; at $210 there is $35 more where that came from."
+          },
+          {
+            "team": "3",
+            "note": "Ninth and 91.42 points of tiebreaker outside the bracket. Rich is untouched at $200 and still holds the cheapest cupboard of keeper rights in the league."
+          }
+        ],
+        "doneDealing": [
+          {
+            "team": "1",
+            "note": "At exactly $225 after three incoming deals — the hard ceiling. Paul and Nick cannot receive another draft dollar this offseason from anyone, for anything. They can still send up to $50, which makes them the only team able to take on somebody else's budget problem."
+          },
+          {
+            "team": "9",
+            "note": "Sold $18 across two deals and sits at $182, seven dollars off the floor. Jesse can still take money in, but he is effectively finished as a seller."
+          },
+          {
+            "team": "5",
+            "note": "Spent $5 getting Garrett Wilson and Colston Loveland, and both keeper slots were already committed. Andrew has $30 of room left but nowhere obvious to put it on a team that has won seven straight."
+          }
+        ],
+        "closing": "The deadline falls at the end of Week 11. After that the rosters are locked for the Tamiki Cup run, the keeper prices on the roster page become the ones that actually matter, and anybody holding a third keeper-worthy player watches him go back into the auction."
+      }
     },
     {
       "week": 9,
