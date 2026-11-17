@@ -147,7 +147,7 @@
       "market": {
         "title": "Buyers & Sellers",
         "deadline": "Final week · window shuts after Week 11",
-        "intro": "This is the last call. Trades of players and future draft dollars close at the end of Week 11, four regular-season games remain, and the standings have finally pulled apart: four teams at 7-3 or better, three at 5-5, three at 4-6 fighting over the last seat, and two who are done. Worth noting before anyone picks up the phone — two managers have nearly spent their flexibility. Paul and Nick are at exactly $225 and cannot legally receive another draft dollar, and Jesse is $7 from the floor.",
+        "intro": "This is the last call. Trades of players and future draft dollars close at the end of Week 11, four regular-season games remain, and the standings have finally pulled apart. Remember which way the money runs: sending draft dollars buys you a player now, receiving them sells one for next year's budget. Two managers are at a wall — Paul and Nick are at exactly $225 and cannot sell another player for dollars, and Jesse, who has spent more than anybody, is $7 from the floor.",
         "labels": {
           "mkt-buy": "Playing for the Tamiki Cup",
           "mkt-sell": "Out of it, and should act like it",
@@ -157,44 +157,44 @@
           {
             "team": "Njigbas in Paris",
             "record": "8-2 · 1327.56",
-            "note": "A clear game ahead of the league and the only team with eight wins. Eddie has $190 and $35 of room to bring in — more flexibility than anyone else near the top, and the last week to use it."
+            "note": "A clear game ahead of the league and the only team with eight wins. Eddie spent $10 on Jayden Daniels and has $15 of budget left — one more move in him, and the last week to make it."
           },
           {
             "team": "TheNYFootballTeam",
             "record": "7-3 · 1558.02",
-            "note": "222.52 points clear in scoring, a +385.02 differential, and still only the second seed. Both keeper slots remain open from a draft where he kept nobody, and he has $35 of room. If Nassar does not buy this week there is no version of this roster he is waiting for."
+            "note": "222.52 points clear in scoring, a +385.02 differential, and still only the second seed. Both keeper slots remain open from a draft where he kept nobody, and $15 of spend is left after the Jameson Williams deal. If Nassar does not buy this week there is no version of this roster he is waiting for."
           },
           {
             "team": "The Bushwackers",
             "record": "7-3 · 1269.98",
-            "note": "Seven straight wins from an 0-3 start, and he just spent $5 of next year's budget to get there. Andrew sits at $195 with both keeper slots already committed, so anything else he does this week is a rental."
+            "note": "Seven straight wins from an 0-3 start, and he just spent $5 of next year's budget to get there. Andrew has $20 of spend left and both keeper slots already committed, so anything else he does this week is a rental."
           },
           {
             "team": "KL2 Aspire",
             "record": "7-3 · 1257.54",
-            "note": "Fourth seed and the owner of the week's third-biggest score. But Jesse has sold $18 of next year's budget across two deals and sits at $182 — $7 from the floor. He can still take money in; he has essentially nothing left to send."
+            "note": "Fourth seed, and the most aggressive buyer in the league: $18 of next year's budget spent across two deals to bring in Jonathan Taylor and Puka Nacua. At $182 Jesse is $7 from the floor — one small move left, then he is out of money."
           },
           {
             "team": "Gibbs + Perplexity",
             "record": "5-5 · 1335.50",
-            "note": "Second-most points in the league, a +211.56 differential, and a .500 record — the same contradiction he has carried since September, now with four games to resolve it. Doug is untouched at $200 with the full $25 either way."
+            "note": "Second-most points in the league, a +211.56 differential, and a .500 record — the same contradiction he has carried since September, now with four games to resolve it. Doug is untouched at $200 with the full $25 of spend available."
           },
           {
             "team": "JD and Coke",
             "record": "5-5 · 1294.98",
-            "note": "Fourth-most points, sixth seed, and the best single performance of the week. Serge and Vlad are at $200 with full flexibility and three titles between them that all predate this app."
+            "note": "Fourth-most points, sixth seed, and the best single performance of the week. Serge and Vlad are untouched at $200 with the full $25 to spend, and three titles between them that all predate this app."
           }
         ],
         "sellers": [
           {
             "team": "Mendes' Eyebrow",
             "record": "2-8 · 999.08",
-            "note": "The fewest points in the league and 1,310.08 against. Paul and Nick have been busy — three deals, and they are now at exactly $225, the hard ceiling. They cannot receive another draft dollar this week under any circumstances. What they can still do is send up to $50 the other way, which makes them the one team able to absorb somebody else's salary problem."
+            "note": "The fewest points in the league and 1,310.08 against. Paul and Nick have sold four players across three deals and sit at exactly $225 — the hard ceiling. They cannot sell another player for draft dollars this offseason, which makes the De'Von Achane question one for the keeper deadline rather than this week."
           },
           {
             "team": "Ridley me this",
             "record": "2-8 · 1060.02",
-            "note": "1,320.74 points against, the most in the league, and a 2-8 record to go with it. Peter has already bought once this season, taking $8 and C.J. Stroud from Jesse. At $208 he has $33 of room to sell, and four games of nothing left to play for."
+            "note": "1,320.74 points against, the most in the league, and a 2-8 record to go with it. Peter has already sold once, taking $8 and C.J. Stroud for Jonathan Taylor, and has $17 of room left to take in before he hits the ceiling."
           }
         ],
         "fence": [
@@ -211,18 +211,18 @@
           {
             "team": "Settlers of Cottan",
             "record": "4-6 · 1162.94",
-            "note": "Ninth, 91.42 points of tiebreaker behind the final seat, and coming off the worst score of his season. Rich still holds the cheapest cupboard of keeper rights in the league if he decides this is not the year."
+            "note": "Ninth, 91.42 points of tiebreaker behind the final seat, and coming off the worst score of his season. Rich is untouched at $200 with a full $25 of selling room, and still holds the cheapest cupboard of keeper rights in the league."
           },
           {
             "team": "Warren World All-Stars",
             "record": "4-6 · 1070.64",
-            "note": "Tenth, and the 71.02 on Sunday was the second-lowest score anyone has posted all season. David took $10 and Chris Godwin for Puka Nacua last week; at $210 he has $35 of selling room if he wants to go further."
+            "note": "Tenth, and the 71.02 on Sunday was the second-lowest score anyone has posted all season. David sold Puka Nacua for $10 and Chris Godwin last week; at $210 he can still take in $15 more."
           }
         ],
         "rulesTitle": "Last week — the rules that matter",
         "rules": [
           "Trades of players and future draft dollars close at the END OF WEEK 11. This is the final week. There are no vetoes in this league, and the Commissioner logs every trade that moves draft dollars.",
-          "No team may enter the draft with more than $225 or less than $175 — $25 either side of the standard $200 budget. Five teams have already moved dollars this season, and two of them are at or near the limit.",
+          "No team may enter the draft with more than $225 or less than $175 — $25 either side of the standard $200 budget. Spending dollars moves you down toward the floor, selling players for dollars moves you up toward the ceiling, and five teams have already moved.",
           "You may keep a maximum of two players off your final roster. Everything else re-enters the auction, so a third keeper-worthy player is an asset that expires in about ten days.",
           "Keeper tax compounds on last year's price: +$5 the first year kept, +$10 the second, +$20 the third, +$40 the fourth. Nobody can be kept a fifth year — check the badge on the roster page before you pay up for somebody else's K3.",
           "No team may hold more than two keepers entering the draft — unrestricted, restricted, or any mix. Trading for a third set of keeper rights does not raise that ceiling."
@@ -233,54 +233,54 @@
       "primer": {
         "title": "Trade Deadline Primer",
         "kicker": "One week left · window shuts after Week 11",
-        "intro": "Five deals, forty-three dollars of next year's budget and eleven players have already changed hands, and seven of the twelve teams have been involved. Everything below is computed from the Commissioner's ledger, including the part most people get wrong at a deadline: what the constitution will actually let you do. The $175–$225 band is a hard wall, and two managers have already hit it or come close.",
+        "intro": "Five deals, forty-three dollars of next year's budget and eleven players have already changed hands, and seven of the twelve teams have been involved. One thing worth saying plainly, because it is the whole economics of this league: sending draft dollars is BUYING — you pay out of next year's budget to get a player now — and receiving them is SELLING. So a team under $200 has been buying, a team over $200 has been selling, and the $175–$225 band is the hard wall on both. Everything below is computed from the Commissioner's ledger.",
         "stillBuying": [
           {
-            "team": "7",
-            "note": "Best record in the league, $35 of room, and the fewest excuses. If Eddie wants to close this out he has the capacity to do it."
+            "team": "6",
+            "note": "Second-most points in the league, a .500 record and completely untouched at $200 — the full $25 of spend still available. Doug has more unused buying power than any contender."
           },
           {
             "team": "12",
-            "note": "Scoring like nobody in league history, still the second seed, $35 of room and both keeper slots open from a draft where he kept nobody. Nassar can absorb anything."
+            "note": "Scoring like nobody in league history and still only second. Nassar already spent $10 on Jameson Williams; $15 of budget remains, and both keeper slots are open from a draft where he kept nobody."
           },
           {
-            "team": "6",
-            "note": "Second-most points, a .500 record, and completely untouched at $200 with the full $25 either way. Doug has the most unused flexibility of any contender."
+            "team": "7",
+            "note": "Best record in the league. Eddie spent $10 getting Jayden Daniels and has $15 left to spend — enough for one more move, not two."
           },
           {
             "team": "10",
-            "note": "Fourth-most points and sixth seed, untouched at $200. Serge and Vlad have not made a move all year."
+            "note": "Fourth-most points, sixth seed, untouched at $200 with the full $25. Serge and Vlad have not made a move all year and have the most room of anyone in the bracket."
+          },
+          {
+            "team": "5",
+            "note": "Seven straight wins, and he paid $5 for Garrett Wilson and Colston Loveland to keep it going. Andrew has $20 of spend left, though both keeper slots are already committed."
           }
         ],
         "stillSelling": [
           {
             "team": "4",
-            "note": "2-8 with the most points against in the league. Peter bought once already, taking $8 and C.J. Stroud from Jesse; at $208 he still has $33 to send the other way and nothing left to play for."
+            "note": "2-8 with the most points against in the league. Peter has already sold once, taking $8 and C.J. Stroud for Jonathan Taylor, and can still take in $17 more before he hits the ceiling."
           },
           {
             "team": "2",
-            "note": "Tenth at 4-6 and coming off the second-lowest score of the season. David has already sold Puka Nacua; at $210 there is $35 more where that came from."
+            "note": "Tenth at 4-6 and coming off the second-lowest score of the season. David sold Puka Nacua for $10 and Chris Godwin; $15 of selling room remains."
           },
           {
             "team": "3",
-            "note": "Ninth and 91.42 points of tiebreaker outside the bracket. Rich is untouched at $200 and still holds the cheapest cupboard of keeper rights in the league."
+            "note": "Ninth, 91.42 points outside the bracket, and completely untouched at $200. Rich can take in a full $25 and still holds the cheapest cupboard of keeper rights in the league."
           }
         ],
         "doneDealing": [
           {
             "team": "1",
-            "note": "At exactly $225 after three incoming deals — the hard ceiling. Paul and Nick cannot receive another draft dollar this offseason from anyone, for anything. They can still send up to $50, which makes them the only team able to take on somebody else's budget problem."
+            "note": "At exactly $225 after selling Jameson Williams, Jayden Daniels, Garrett Wilson and Colston Loveland across three deals — the hard ceiling. Paul and Nick cannot sell another player for draft dollars this offseason. They are 2-8, so the $50 of spend they still hold is theoretical."
           },
           {
             "team": "9",
-            "note": "Sold $18 across two deals and sits at $182, seven dollars off the floor. Jesse can still take money in, but he is effectively finished as a seller."
-          },
-          {
-            "team": "5",
-            "note": "Spent $5 getting Garrett Wilson and Colston Loveland, and both keeper slots were already committed. Andrew has $30 of room left but nowhere obvious to put it on a team that has won seven straight."
+            "note": "The most aggressive buyer in the league: $18 spent across two deals to land Jonathan Taylor and Puka Nacua for a 7-3 championship run. Jesse is $7 from the floor, which means one small move left and then he is finished."
           }
         ],
-        "closing": "The deadline falls at the end of Week 11. After that the rosters are locked for the Tamiki Cup run, the keeper prices on the roster page become the ones that actually matter, and anybody holding a third keeper-worthy player watches him go back into the auction."
+        "closing": "The deadline falls at the end of Week 11. After that the rosters lock for the Tamiki Cup run, the keeper prices on the roster page become the ones that actually matter, and anybody holding a third keeper-worthy player watches him go back into the auction."
       }
     },
     {
