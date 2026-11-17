@@ -1,6 +1,236 @@
 {
-  "updated": "2026-11-10",
+  "updated": "2026-11-17",
   "recaps": [
+    {
+      "week": 10,
+      "published": "November 17, 2026",
+      "headline": "Nassar Scored Two Hundred and Nineteen, and He Is Still the Second Seed",
+      "lede": "219.68. The biggest score anyone has put up this season, from the team that already had the most points in the league, in a week where seven of his nine starters cleared twenty. TheNYFootballTeam now has 1,558.02 points — two hundred and twenty-two more than anybody else — a point differential nearly double the next best, and a pace that would break the all-time record by a hundred and thirty-five. He is second, because Eddie keeps winning, and this is a league where that is the only thing that counts.",
+      "games": [
+        {
+          "winner": "TheNYFootballTeam",
+          "winnerPts": 219.68,
+          "loser": "Settlers of Cottan",
+          "loserPts": 87.72,
+          "tag": "Highest score of the season",
+          "blurb": "Two hundred and nineteen points. Nassar went past Doug's 199.32 from Week 1 with seven starters over twenty and no weak spot except a 49ers defense that scored zero and could not possibly have mattered: Emmett Johnson 35.1, Dak Prescott 34.42, a one-dollar Chuba Hubbard 34.2, Joe Burrow 33.16, Isaiah Likely 27.7. Rich put up 87.72, the worst score of his season, with Brock Bowers at 3.8 and Tee Higgins at 11.6. The 131.96-point margin is the widest this league has produced all year.",
+          "stat": "Emmett Johnson 35.1 · Dak Prescott 34.42 · Tony Pollard 23.9 (SoC)"
+        },
+        {
+          "winner": "KL2 Aspire",
+          "winnerPts": 167.36,
+          "loser": "Warren World All-Stars",
+          "loserPts": 71.02,
+          "tag": "The week after",
+          "blurb": "George Pickens went for 43.5 — a seventeen-dollar keeper outscoring most entire rosters — and Jesse is 7-3. On the other side, 71.02: the second-lowest score anybody has managed this season, and it landed in David's first week since trading Puka Nacua to this exact opponent. He started Carson Beck for 0.42 and Devin Singletary for 0.3, and his best starter was the Rams defense at 18.0. Warren World is 4-6 and tenth.",
+          "stat": "George Pickens 43.5 · Brock Purdy 31.66 · Rams D/ST 18.0 (WW)"
+        },
+        {
+          "winner": "Gibbs + Perplexity",
+          "winnerPts": 157.66,
+          "loser": "Ridley me this",
+          "loserPts": 111.64,
+          "tag": "Gibbs goes for forty-four",
+          "blurb": "Jahmyr Gibbs — the $41 keeper the team is named after — scored 44.2, and Patrick Mahomes added 35.42 behind him. Doug is 5-5 and fifth with the second-most points in the league at 1,335.50, which is the most normal sentence anyone has been able to write about his season. Peter got 28.2 from Parker Washington and 20.44 from C.J. Stroud, the quarterback he picked up from Jesse a week ago, and lost by forty-six anyway. Ridley me this is 2-8.",
+          "stat": "Jahmyr Gibbs 44.2 · Patrick Mahomes 35.42 · Parker Washington 28.2 (RmT)"
+        },
+        {
+          "winner": "JD and Coke",
+          "winnerPts": 150.24,
+          "loser": "Matta's Lolita Express",
+          "loserPts": 111.18,
+          "tag": "McCaffrey 46.3",
+          "blurb": "Christian McCaffrey posted the best individual score of the week at 46.3, which for a forty-three-dollar keeper is more or less the entire argument for the keeper rules. Serge and Vlad move to 5-5 and sixth. Will and Fish got 19.0 each from Derrick Henry and a four-dollar Jordyn Tyson, 16.4 from Justin Jefferson, and nothing else worth the trip. They are 5-5 and seventh, and the three teams at 5-5 are separated by 137.80 points of pure tiebreaker.",
+          "stat": "Christian McCaffrey 46.3 · Matthew Stafford 19.76 · Derrick Henry 19.0 (MLE)"
+        },
+        {
+          "winner": "Njigbas in Paris",
+          "winnerPts": 143.24,
+          "loser": "FreeManan",
+          "loserPts": 120.02,
+          "tag": "Eight and two",
+          "blurb": "Jaxon Smith-Njigba 31.1, Chase Brown 28.3 — both sixteen-dollar keepers, both delivering for the tenth week running — and Eddie is 8-2 and a clear game ahead of everyone. Freeman and Manan put up a perfectly respectable 120.02 and lost it, which has become the shape of their season: they hold the eighth and final playoff seat with the seventh-most points in the league and a 4-6 record.",
+          "stat": "Jaxon Smith-Njigba 31.1 · Chase Brown 28.3 · Nico Collins 24.4 (FM)"
+        },
+        {
+          "winner": "The Bushwackers",
+          "winnerPts": 120.06,
+          "loser": "Mendes' Eyebrow",
+          "loserPts": 88.28,
+          "tag": "Seven straight",
+          "blurb": "Andrew started this season 0-3. He has now won seven in a row and sits third. Ja'Marr Chase went for 34.1 and James Cook 21.7, and he managed it while Drake Maye, his K2 keeper, scored 3.02. Paul and Nick put up 88.28 and drop to 2-8 with the fewest points in the league. Jayden Daniels, the fifty-dollar quarterback they traded away in Week 10, was not involved; the one they kept, J.J. McCarthy, went for 17.12.",
+          "stat": "Ja'Marr Chase 34.1 · James Cook 21.7 · Jayden Daniels 20.76 (ME)"
+        }
+      ],
+      "studs": [
+        {
+          "name": "Christian McCaffrey",
+          "pts": 46.3,
+          "team": "JD and Coke",
+          "note": "K1 keeper, $43"
+        },
+        {
+          "name": "Jahmyr Gibbs",
+          "pts": 44.2,
+          "team": "Gibbs + Perplexity",
+          "note": "K2 keeper, $41"
+        },
+        {
+          "name": "George Pickens",
+          "pts": 43.5,
+          "team": "KL2 Aspire",
+          "note": "K1 keeper, $17"
+        },
+        {
+          "name": "Patrick Mahomes",
+          "pts": 35.42,
+          "team": "Gibbs + Perplexity",
+          "note": "$26"
+        },
+        {
+          "name": "Emmett Johnson",
+          "pts": 35.1,
+          "team": "TheNYFootballTeam",
+          "note": "waiver pickup"
+        },
+        {
+          "name": "Dak Prescott",
+          "pts": 34.42,
+          "team": "TheNYFootballTeam",
+          "note": "$36"
+        }
+      ],
+      "duds": [
+        {
+          "name": "Steelers D/ST",
+          "pts": -5.0,
+          "team": "KL2 Aspire",
+          "note": "won by 96 anyway"
+        },
+        {
+          "name": "49ers D/ST",
+          "pts": 0.0,
+          "team": "TheNYFootballTeam",
+          "note": "won by 132 anyway"
+        },
+        {
+          "name": "Devin Singletary",
+          "pts": 0.3,
+          "team": "Warren World All-Stars"
+        },
+        {
+          "name": "Jalen Coker",
+          "pts": 0.3,
+          "team": "Gibbs + Perplexity",
+          "note": "$1"
+        },
+        {
+          "name": "Carson Beck",
+          "pts": 0.42,
+          "team": "Warren World All-Stars"
+        },
+        {
+          "name": "Drake Maye",
+          "pts": 3.02,
+          "team": "The Bushwackers",
+          "note": "K2 keeper, $16"
+        }
+      ],
+      "notes": [
+        "TheNYFootballTeam's 219.68 is the highest score anyone has posted this season, past Gibbs + Perplexity's 199.32 from Week 1. The 131.96-point margin is also the widest of the year.",
+        "Nassar is at 1,558.02 points — 222.52 more than second place — on a pace of 2,181.23, which would clear David Olesh's record of 2,046.18 by 135.05.",
+        "His point differential is +385.02. The next best figure in the league is +211.56.",
+        "The three biggest individual scores of the week were all keepers: Christian McCaffrey at $43, Jahmyr Gibbs at $41 and George Pickens at $17.",
+        "The Bushwackers started 0-3 and have won seven in a row.",
+        "Three teams are 5-5 and three are 4-6. The eighth seed and the ninth are both 4-6, separated by 91.42 points of tiebreaker."
+      ],
+      "market": {
+        "title": "Buyers & Sellers",
+        "deadline": "Final week · window shuts after Week 11",
+        "intro": "This is the last call. Trades of players and future draft dollars close at the end of Week 11, four regular-season games remain, and the standings have finally pulled apart: four teams at 7-3 or better, three at 5-5, three at 4-6 fighting over the last seat, and two who are done. Worth noting before anyone picks up the phone — two managers have nearly spent their flexibility. Paul and Nick are at exactly $225 and cannot legally receive another draft dollar, and Jesse is $7 from the floor.",
+        "labels": {
+          "mkt-buy": "Playing for the Tamiki Cup",
+          "mkt-sell": "Out of it, and should act like it",
+          "mkt-hold": "One bad Sunday from either side"
+        },
+        "buyers": [
+          {
+            "team": "Njigbas in Paris",
+            "record": "8-2 · 1327.56",
+            "note": "A clear game ahead of the league and the only team with eight wins. Eddie has $190 and $35 of room to bring in — more flexibility than anyone else near the top, and the last week to use it."
+          },
+          {
+            "team": "TheNYFootballTeam",
+            "record": "7-3 · 1558.02",
+            "note": "222.52 points clear in scoring, a +385.02 differential, and still only the second seed. Both keeper slots remain open from a draft where he kept nobody, and he has $35 of room. If Nassar does not buy this week there is no version of this roster he is waiting for."
+          },
+          {
+            "team": "The Bushwackers",
+            "record": "7-3 · 1269.98",
+            "note": "Seven straight wins from an 0-3 start, and he just spent $5 of next year's budget to get there. Andrew sits at $195 with both keeper slots already committed, so anything else he does this week is a rental."
+          },
+          {
+            "team": "KL2 Aspire",
+            "record": "7-3 · 1257.54",
+            "note": "Fourth seed and the owner of the week's third-biggest score. But Jesse has sold $18 of next year's budget across two deals and sits at $182 — $7 from the floor. He can still take money in; he has essentially nothing left to send."
+          },
+          {
+            "team": "Gibbs + Perplexity",
+            "record": "5-5 · 1335.50",
+            "note": "Second-most points in the league, a +211.56 differential, and a .500 record — the same contradiction he has carried since September, now with four games to resolve it. Doug is untouched at $200 with the full $25 either way."
+          },
+          {
+            "team": "JD and Coke",
+            "record": "5-5 · 1294.98",
+            "note": "Fourth-most points, sixth seed, and the best single performance of the week. Serge and Vlad are at $200 with full flexibility and three titles between them that all predate this app."
+          }
+        ],
+        "sellers": [
+          {
+            "team": "Mendes' Eyebrow",
+            "record": "2-8 · 999.08",
+            "note": "The fewest points in the league and 1,310.08 against. Paul and Nick have been busy — three deals, and they are now at exactly $225, the hard ceiling. They cannot receive another draft dollar this week under any circumstances. What they can still do is send up to $50 the other way, which makes them the one team able to absorb somebody else's salary problem."
+          },
+          {
+            "team": "Ridley me this",
+            "record": "2-8 · 1060.02",
+            "note": "1,320.74 points against, the most in the league, and a 2-8 record to go with it. Peter has already bought once this season, taking $8 and C.J. Stroud from Jesse. At $208 he has $33 of room to sell, and four games of nothing left to play for."
+          }
+        ],
+        "fence": [
+          {
+            "team": "Matta's Lolita Express",
+            "record": "5-5 · 1197.70",
+            "note": "Seventh at .500, and the lowest-scoring of the three 5-5 teams by 137.80. Will and Fish are in the bracket today and would be out with one bad week."
+          },
+          {
+            "team": "FreeManan",
+            "record": "4-6 · 1254.36",
+            "note": "Holding the eighth and final seat with the seventh-most points and a losing record. The 2023 champions have now lost a game in which they scored 120.02, which is the whole story of their season."
+          },
+          {
+            "team": "Settlers of Cottan",
+            "record": "4-6 · 1162.94",
+            "note": "Ninth, 91.42 points of tiebreaker behind the final seat, and coming off the worst score of his season. Rich still holds the cheapest cupboard of keeper rights in the league if he decides this is not the year."
+          },
+          {
+            "team": "Warren World All-Stars",
+            "record": "4-6 · 1070.64",
+            "note": "Tenth, and the 71.02 on Sunday was the second-lowest score anyone has posted all season. David took $10 and Chris Godwin for Puka Nacua last week; at $210 he has $35 of selling room if he wants to go further."
+          }
+        ],
+        "rulesTitle": "Last week — the rules that matter",
+        "rules": [
+          "Trades of players and future draft dollars close at the END OF WEEK 11. This is the final week. There are no vetoes in this league, and the Commissioner logs every trade that moves draft dollars.",
+          "No team may enter the draft with more than $225 or less than $175 — $25 either side of the standard $200 budget. Five teams have already moved dollars this season, and two of them are at or near the limit.",
+          "You may keep a maximum of two players off your final roster. Everything else re-enters the auction, so a third keeper-worthy player is an asset that expires in about ten days.",
+          "Keeper tax compounds on last year's price: +$5 the first year kept, +$10 the second, +$20 the third, +$40 the fourth. Nobody can be kept a fifth year — check the badge on the roster page before you pay up for somebody else's K3.",
+          "No team may hold more than two keepers entering the draft — unrestricted, restricted, or any mix. Trading for a third set of keeper rights does not raise that ceiling."
+        ],
+        "rulesSource": "Full text on the Constitution tab, under In-Season Rules and Off-Season & Keepers."
+      },
+      "closing": "Four regular-season games left and one week to trade. Eddie is a game clear, Nassar is scoring like nobody in the history of this league and sitting second, Andrew has won seven straight from an 0-3 start, and the last playoff seat belongs to a 4-6 team with the seventh-most points. After Sunday the window shuts and everybody lives with the roster they have. The worst regular-season record hosts the draft party, and that is down to two teams at 2-8 separated by 61 points of scoring."
+    },
     {
       "week": 9,
       "published": "November 10, 2026",

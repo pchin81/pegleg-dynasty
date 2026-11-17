@@ -1,6 +1,6 @@
 {
   "season": 2027,
-  "updated": "2026-11-16",
+  "updated": "2026-11-17",
   "base": 200,
   "floor": 175,
   "ceiling": 225,
@@ -103,6 +103,44 @@
           "name": "Puka Nacua",
           "from": "2",
           "to": "9"
+        }
+      ],
+      "slots": 0,
+      "note": ""
+    },
+    {
+      "week": 11,
+      "date": "2026-11-17",
+      "dollars": 5,
+      "to": "1",
+      "from": "5",
+      "toLabel": "pchin81 & nickox",
+      "fromLabel": "andrewhwang07",
+      "players": [
+        {
+          "name": "Garrett Wilson",
+          "from": "1",
+          "to": "5"
+        },
+        {
+          "name": "Colston Loveland",
+          "from": "1",
+          "to": "5"
+        },
+        {
+          "name": "Hunter Henry",
+          "from": "5",
+          "to": "1"
+        },
+        {
+          "name": "Caleb Douglas",
+          "from": "5",
+          "to": "1"
+        },
+        {
+          "name": "Michael Wilson",
+          "from": "5",
+          "to": "1"
         }
       ],
       "slots": 0,
