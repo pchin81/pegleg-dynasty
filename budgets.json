@@ -1,6 +1,6 @@
 {
   "season": 2027,
-  "updated": "2026-11-17",
+  "updated": "2026-11-18",
   "base": 200,
   "floor": 175,
   "ceiling": 225,
@@ -141,6 +141,47 @@
           "name": "Michael Wilson",
           "from": "5",
           "to": "1"
+        }
+      ],
+      "slots": 0,
+      "note": ""
+    },
+    {
+      "week": 11,
+      "date": "2026-11-18",
+      "dollars": 15,
+      "to": "11",
+      "from": "10",
+      "toLabel": "Wdanders888 & jfishner",
+      "fromLabel": "axesup & SofaKingdum",
+      "players": [
+        {
+          "name": "Justin Jefferson",
+          "from": "11",
+          "to": "10"
+        }
+      ],
+      "slots": 0,
+      "note": ""
+    },
+    {
+      "week": 11,
+      "date": "2026-11-18",
+      "dollars": 10,
+      "to": "11",
+      "from": "6",
+      "toLabel": "Wdanders888 & jfishner",
+      "fromLabel": "Dougisme",
+      "players": [
+        {
+          "name": "Derrick Henry",
+          "from": "11",
+          "to": "6"
+        },
+        {
+          "name": "Luther Burden III",
+          "from": "11",
+          "to": "6"
         }
       ],
       "slots": 0,
