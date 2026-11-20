@@ -147,7 +147,7 @@
       "market": {
         "title": "Buyers & Sellers",
         "deadline": "Final week · window shuts after Week 11",
-        "intro": "This is the last call. Trades of players and future draft dollars close at the end of Week 11, four regular-season games remain, and deadline week has already produced the biggest teardown of the season from a team still in the playoff bracket. Remember which way the money runs: sending draft dollars buys you a player now, receiving them sells one for next year's budget. Two teams are now at the $225 ceiling and cannot sell again — Paul and Nick, and Will and Fish — while Jesse and Serge and Vlad are nearly out of money to spend.",
+        "intro": "This is the last call. Trades of players and future draft dollars close at the end of Week 11, four regular-season games remain, and deadline week has produced the biggest teardown of the season from a team still in the playoff bracket. Remember which way the money runs: sending draft dollars buys you a player now, receiving them sells one for next year's budget. Two teams are at the $225 ceiling and cannot sell again — Paul and Nick, and Will and Fish — while Jesse, Doug, Serge and Vlad, and Dave are all within ten dollars of a wall of their own.",
         "labels": {
           "mkt-buy": "Playing for the Tamiki Cup",
           "mkt-sell": "Out of it, and should act like it",
@@ -177,7 +177,7 @@
           {
             "team": "Gibbs + Perplexity",
             "record": "5-5 · 1335.50",
-            "note": "Second-most points in the league, a +211.56 differential and a .500 record — and he finally moved, paying $10 for Derrick Henry and Luther Burden III. Doug has $15 of spend left and four games to turn the best scoring profile outside the top two into a seed."
+            "note": "Second-most points in the league and the busiest buyer of deadline week: $10 for Derrick Henry and Luther Burden III, then $6 and Ladd McConkey to Dave for Zay Flowers. Doug has spent $16 of next year's budget and has $9 left. Four games to turn the best scoring profile outside the top two into a seed."
           },
           {
             "team": "JD and Coke",
@@ -216,7 +216,7 @@
           {
             "team": "Warren World All-Stars",
             "record": "4-6 · 1070.64",
-            "note": "Tenth, and the 71.02 on Sunday was the second-lowest score anyone has posted all season. David sold Puka Nacua for $10 and Chris Godwin last week; at $210 he can still take in $15 more."
+            "note": "Tenth, and the 71.02 two weeks ago was the second-lowest score anyone has posted all season. David has become the most willing seller in the league after Will and Fish — Puka Nacua for $10 and Chris Godwin, then Zay Flowers for $6 and Ladd McConkey. At $216 he has $9 of selling room before he is sold out too."
           }
         ],
         "rulesTitle": "Last week — the rules that matter",
@@ -233,7 +233,7 @@
       "primer": {
         "title": "Trade Deadline Primer",
         "kicker": "Deadline week · window shuts after Week 11",
-        "intro": "Seven deals, sixty-eight dollars of next year's budget and fourteen players have changed hands, and ten of the twelve teams have now been involved. One thing worth saying plainly, because it is the whole economics of this league: sending draft dollars is BUYING — you pay out of next year's budget to get a player now — and receiving them is SELLING. A team under $200 has been buying, a team over $200 has been selling, and the $175–$225 band is the hard wall on both. Two teams have now hit the ceiling and cannot sell another player for dollars; two more are nearly out of money. Everything below is computed from the Commissioner's ledger.",
+        "intro": "Eight deals, seventy-four dollars of next year's budget and sixteen players have changed hands, and ten of the twelve teams have been involved. One thing worth saying plainly, because it is the whole economics of this league: sending draft dollars is BUYING — you pay out of next year's budget to get a player now — and receiving them is SELLING. A team under $200 has been buying, a team over $200 has been selling, and the $175–$225 band is the hard wall on both. Two teams have hit the ceiling and cannot sell again; four more are within ten dollars of a wall. Everything below is computed from the Commissioner's ledger.",
         "stillBuying": [
           {
             "team": "8",
@@ -253,7 +253,7 @@
           },
           {
             "team": "6",
-            "note": "Moved at last: $10 for Derrick Henry and Luther Burden III out of Will and Fish's teardown. Doug has $15 of spend left and the second-most points in the league to justify using it."
+            "note": "The busiest buyer of deadline week: $10 for Derrick Henry and Luther Burden III out of the Will and Fish teardown, then $6 and Ladd McConkey to Dave for Zay Flowers. Doug has spent $16 and has $9 left — one more small move, and he has the second-most points in the league to justify it."
           }
         ],
         "stillSelling": [
@@ -267,7 +267,7 @@
           },
           {
             "team": "2",
-            "note": "Tenth at 4-6 and coming off the second-lowest score of the season. David sold Puka Nacua for $10 and Chris Godwin; $15 of selling room remains."
+            "note": "Tenth at 4-6 and the most active seller on the board after Will and Fish. David sold Puka Nacua for $10 and Chris Godwin, then Zay Flowers for $6 and Ladd McConkey. At $216 he has $9 of selling room left before he joins the sold-out club."
           }
         ],
         "doneDealing": [
@@ -288,7 +288,7 @@
             "note": "Paid $15 for Justin Jefferson, the single biggest cash price of the season. Serge and Vlad have $10 left and sit sixth at 5-5."
           }
         ],
-        "closing": "The deadline falls at the end of Week 11, which is this Sunday. After that the rosters lock for the Tamiki Cup run, the keeper prices on the roster page become the ones that actually matter, and anybody holding a third keeper-worthy player watches him go back into the auction."
+        "closing": "The deadline falls at the end of Week 11, which is this Sunday. Zay Flowers was the first actual keeper to change hands all season, and the Commissioner's ruling is that the keeper chain follows the player — he was kept once by Dave, so he enters the 2027 draft as a K2 at $26 on Doug's roster, not a fresh K1. After Sunday the rosters lock for the Tamiki Cup run, the keeper prices on the roster page become the ones that actually matter, and anybody holding a third keeper-worthy player watches him go back into the auction."
       }
     },
     {

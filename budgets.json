@@ -1,6 +1,6 @@
 {
   "season": 2027,
-  "updated": "2026-11-18",
+  "updated": "2026-11-20",
   "base": 200,
   "floor": 175,
   "ceiling": 225,
@@ -186,6 +186,29 @@
       ],
       "slots": 0,
       "note": ""
+    },
+    {
+      "week": 11,
+      "date": "2026-11-20",
+      "dollars": 6,
+      "to": "2",
+      "from": "6",
+      "toLabel": "dolesh2",
+      "fromLabel": "Dougisme",
+      "players": [
+        {
+          "name": "Ladd McConkey",
+          "from": "6",
+          "to": "2"
+        },
+        {
+          "name": "Zay Flowers",
+          "from": "2",
+          "to": "6"
+        }
+      ],
+      "slots": 0,
+      "note": "First keeper to change hands this season. Commissioner's ruling: the keeper chain follows the player, so Zay Flowers enters 2027 as a K2 at $26."
     }
   ]
 }
