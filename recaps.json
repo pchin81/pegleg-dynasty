@@ -147,7 +147,7 @@
       "market": {
         "title": "Buyers & Sellers",
         "deadline": "Final week · window shuts after Week 11",
-        "intro": "This is the last call. Trades of players and future draft dollars close at the end of Week 11, four regular-season games remain, and deadline week has produced the biggest teardown of the season from a team still in the playoff bracket. Remember which way the money runs: sending draft dollars buys you a player now, receiving them sells one for next year's budget. Two teams are at the $225 ceiling and cannot sell again — Paul and Nick, and Will and Fish — while Jesse, Doug, Serge and Vlad, and Dave are all within ten dollars of a wall of their own.",
+        "intro": "This is the last call. Trades of players and future draft dollars close at the end of Week 11, four regular-season games remain, and deadline week has produced the biggest teardown of the season from a team still in the playoff bracket. Remember which way the money runs: sending draft dollars buys you a player now, receiving them sells one for next year's budget. Three teams have now hit a wall — Paul and Nick and Will and Fish have sold the maximum $25, Jesse has spent the maximum $25 — and Dave, Peter, Doug, and Serge and Vlad are all within ten dollars of their own.",
         "labels": {
           "mkt-buy": "Playing for the Tamiki Cup",
           "mkt-sell": "Out of it, and should act like it",
@@ -172,7 +172,7 @@
           {
             "team": "KL2 Aspire",
             "record": "7-3 · 1257.54",
-            "note": "Fourth seed, and the most aggressive buyer in the league: $18 of next year's budget spent across two deals to bring in Jonathan Taylor and Puka Nacua. At $182 Jesse is $7 from the floor — one small move left, then he is out of money."
+            "note": "Fourth seed, and the league's most aggressive buyer by a distance: the full $25 of next year's budget spent across three deals to bring in Jonathan Taylor, Puka Nacua and Parker Washington. Jesse is at exactly $175, the floor. He cannot spend another dollar at any price — whatever this roster is now, it is what he takes into January."
           },
           {
             "team": "Gibbs + Perplexity",
@@ -194,7 +194,7 @@
           {
             "team": "Ridley me this",
             "record": "2-8 · 1060.02",
-            "note": "1,320.74 points against, the most in the league, and a 2-8 record to go with it. Peter has already sold once, taking $8 and C.J. Stroud for Jonathan Taylor, and has $17 of room left to take in before he hits the ceiling."
+            "note": "1,320.74 points against, the most in the league, and a 2-8 record to go with it. Peter has quietly been the busiest seller nobody mentions — $8 and C.J. Stroud for Jonathan Taylor, then $7 and T.J. Hockenson for Parker Washington. At $215 he has $10 of selling room left before he is sold out too."
           }
         ],
         "fence": [
@@ -233,7 +233,7 @@
       "primer": {
         "title": "Trade Deadline Primer",
         "kicker": "Deadline week · window shuts after Week 11",
-        "intro": "Eight deals, seventy-four dollars of next year's budget and sixteen players have changed hands, and ten of the twelve teams have been involved. One thing worth saying plainly, because it is the whole economics of this league: sending draft dollars is BUYING — you pay out of next year's budget to get a player now — and receiving them is SELLING. A team under $200 has been buying, a team over $200 has been selling, and the $175–$225 band is the hard wall on both. Two teams have hit the ceiling and cannot sell again; four more are within ten dollars of a wall. Everything below is computed from the Commissioner's ledger.",
+        "intro": "Nine deals, eighty-one dollars of next year's budget and eighteen players have changed hands, and ten of the twelve teams have been involved. One thing worth saying plainly, because it is the whole economics of this league: sending draft dollars is BUYING — you pay out of next year's budget to get a player now — and receiving them is SELLING. A team under $200 has been buying, a team over $200 has been selling, and the $175–$225 band is the hard wall on both. Three teams have now reached a wall: Paul and Nick and Will and Fish have each sold the maximum $25, and Jesse has spent the maximum $25. Four more are within ten dollars of joining them. Everything below is computed from the Commissioner's ledger.",
         "stillBuying": [
           {
             "team": "8",
@@ -263,7 +263,7 @@
           },
           {
             "team": "4",
-            "note": "2-8 with the most points against in the league. Peter sold once already, taking $8 and C.J. Stroud for Jonathan Taylor, and has $17 of selling room left."
+            "note": "2-8 with the most points against in the league, and quietly the busiest seller nobody is talking about: $8 and C.J. Stroud for Jonathan Taylor, then $7 and T.J. Hockenson for Parker Washington. Peter is at $215 with $10 of selling room left."
           },
           {
             "team": "2",
@@ -281,14 +281,14 @@
           },
           {
             "team": "9",
-            "note": "The league's most aggressive buyer: $18 across two deals for Jonathan Taylor and Puka Nacua on a 7-3 run. Jesse is $7 from the floor — one small move left, then he is finished."
+            "note": "Finished, in the most literal sense. Jesse has spent the full $25 the constitution allows — $18 for Jonathan Taylor and Puka Nacua, then $7 and T.J. Hockenson for Parker Washington — and sits at exactly $175, the floor. He cannot buy another player for draft dollars at any price. The most aggressive buyer in the league, now out of money, with a 7-3 record to show for it."
           },
           {
             "team": "10",
             "note": "Paid $15 for Justin Jefferson, the single biggest cash price of the season. Serge and Vlad have $10 left and sit sixth at 5-5."
           }
         ],
-        "closing": "The deadline falls at the end of Week 11, which is this Sunday. Zay Flowers was the first actual keeper to change hands all season, and the Commissioner's ruling is that the keeper chain follows the player — he was kept once by Dave, so he enters the 2027 draft as a K2 at $26 on Doug's roster, not a fresh K1. After Sunday the rosters lock for the Tamiki Cup run, the keeper prices on the roster page become the ones that actually matter, and anybody holding a third keeper-worthy player watches him go back into the auction."
+        "closing": "The deadline falls at the end of Week 11, which is this Sunday. Zay Flowers was the first actual keeper to change hands all season, and the Commissioner's ruling is that the keeper chain follows the player — he was kept once by Dave, so he enters the 2027 draft as a K2 at $26 on Doug's roster, not a fresh K1. Three teams have now spent or sold the full $25 the constitution allows. After Sunday the rosters lock for the Tamiki Cup run, the keeper prices on the roster page become the ones that actually matter, and anybody holding a third keeper-worthy player watches him go back into the auction."
       }
     },
     {

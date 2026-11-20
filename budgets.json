@@ -209,6 +209,29 @@
       ],
       "slots": 0,
       "note": "First keeper to change hands this season. Commissioner's ruling: the keeper chain follows the player, so Zay Flowers enters 2027 as a K2 at $26."
+    },
+    {
+      "week": 11,
+      "date": "2026-11-20",
+      "dollars": 7,
+      "to": "4",
+      "from": "9",
+      "toLabel": "RoofKorean",
+      "fromLabel": "jmelgares",
+      "players": [
+        {
+          "name": "T.J. Hockenson",
+          "from": "9",
+          "to": "4"
+        },
+        {
+          "name": "Parker Washington",
+          "from": "4",
+          "to": "9"
+        }
+      ],
+      "slots": 0,
+      "note": "Takes Jesse to exactly $175, the floor. He has now spent the full $25 the constitution allows."
     }
   ]
 }
